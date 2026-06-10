@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <title>Medical</title>
+    <link rel="icon" href="./Assets/logo-icon.webp" />
+    <link rel="stylesheet" href="./blog.css" />
+    <link rel="stylesheet" href="./layout.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Premium Medical Loader -->
+    <div class="medical-loader" id="medicalLoader">
+      <div class="loader-wrapper">
+        <div class="medical-cross">
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="ecg-line">
+          <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+            <path
+              d="M0 50 L70 50 L90 20 L110 80 L130 50 L200 50 L220 30 L240 70 L260 50 L500 50"
+            />
+          </svg>
+        </div>
+
+        <h3 class="loading-text">Preparing Your Care Experience...</h3>
+      </div>
+    </div>
+
+    <div class="the-main">
+      <header>
+        <div class="header1">
+          <div class="container1">
+            <h3>Welcome To Stackly Medical Health-Care Services.</h3>
+          </div>
+          <div class="container2">
+            <div>
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>(123)456-7890</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>Support@stackly.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="header2">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./Assets/logo-stackly.webp" alt="Logo" />
+            </a>
+          </div>
+
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index.html">Home</a>
+
+                <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index2.html">Home 2</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./service.html">Services</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+              <li><a href="./dashboard.html">Dashboard</a></li>
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <a class="btn" href="./app.html">Appointment</a>
+
+              <a href="./signin.html">
+                <i class="fa-regular fa-circle-user"></i>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li
+            class="has-dropdown menu-item"
+            data-aos="fade-up-right"
+            data-aos-delay="100"
+          >
+            <div class="dropdown-header">
+              <a href="./index.html">Home</a>
+              <span class="drop-caret" id="home-caret">▾</span>
+            </div>
+            <ul class="submenu" id="home-dropdown">
+              <li><a href="./index2.html">Home 2</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="150">
+            <a href="./about.html">About</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="200">
+            <a href="./service.html">Services</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="250">
+            <a href="./blog.html">Blog</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="300">
+            <a href="./contact.html">Contact Us</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="350">
+            <a href="./dashboard.html">Dashboard</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="400">
+            <a href="./signin.html">Sign In</a>
+          </li>
+        </ul>
+
+        <div class="sidebar-login">
+          <a href="./app.html">
+            <button class="login-btn">Book an Appointment</button>
+          </a>
+        </div>
+      </div>
+
+      <main>
+        <section class="blog-hero">
+          <div class="bg-shape cross-1"><i class="fa-solid fa-plus"></i></div>
+          <div class="bg-shape cross-2"><i class="fa-solid fa-plus"></i></div>
+          <div class="bg-shape cross-3"><i class="fa-solid fa-plus"></i></div>
+
+          <div class="container blog-hero-wrapper">
+            <div class="blog-hero-content">
+              <div class="news-ticker">
+                <span class="ticker-label">LATEST</span>
+                <div class="ticker-text">
+                  <p>
+                    New study: AI-driven early detection of cardiac anomalies
+                    shows 98% accuracy...
+                  </p>
+                </div>
+              </div>
+
+              <div class="featured-label">
+                <span class="pulse-dot"></span> FEATURED ARTICLE
+              </div>
+
+              <h1 class="hero-title">
+                The Future of <span class="highlight">Precision Medicine</span>:
+                Bridging Tech & Care
+              </h1>
+
+              <p class="hero-excerpt">
+                Explore how genomic sequencing and AI-driven diagnostics are
+                transforming personalized patient treatments in 2026.
+              </p>
+
+              <div class="hero-meta">
+                <div class="author">
+                  <img src="./Assets/testi2_11zon.webp" alt="Dr. Julian" />
+                  <div>
+                    <strong>Dr. Julian Voss</strong>
+                    <span>Head of Clinical Research</span>
+                  </div>
+                </div>
+                <div class="read-stats">
+                  <span><i class="fa-regular fa-clock"></i> 12 Min Read</span>
+                  <span><i class="fa-regular fa-eye"></i> 1.2k Views</span>
+                </div>
+              </div>
+
+              <div class="hero-stats-row">
+                <div class="stat-box">
+                  <h3 class="stat-number" data-target="500">0</h3>
+                  <span>Research Papers</span>
+                </div>
+                <div class="stat-box">
+                  <h3 class="stat-number" data-target="25">0</h3>
+                  <span>Expert Authors</span>
+                </div>
+                <div class="stat-box">
+                  <h3 class="stat-number" data-target="15">0</h3>
+                  <span>Specialties</span>
+                </div>
+              </div>
+
+              <div class="hero-actions">
+                <a href="./error.html" class="btn-primary">Start Reading</a>
+                <a href="./error.html" class="btn-primary">View Latest News</a>
+              </div>
+            </div>
+
+            <div class="blog-hero-visual">
+              <div class="journal-wrapper">
+                <div class="journal-card">
+                  <img
+                    src="./Assets/blogmedical.webp"
+                    alt="Laboratory Research"
+                  />
+                  <div class="floating-info">
+                    <i class="fa-solid fa-microscope"></i>
+                    <span>New Research Paper Published</span>
+                  </div>
+                </div>
+                <div class="journal-frame"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <section class="news-portal">
+        <div class="portal-container">
+          <div class="active-news-display" id="mainDisplay">
+            <div class="display-content">
+              <div class="image-mask">
+                <img
+                  id="mainImg"
+                  src="./Assets/Cardiology_11zon.webp"
+                  alt="Main News"
+                />
+              </div>
+
+              <div class="display-text">
+                <div class="text-mask">
+                  <span class="blog-tag" id="mainTag">Cardiology</span>
+                </div>
+
+                <div class="text-mask">
+                  <h2 id="mainTitle">Advanced Heart Surgery Success</h2>
+                </div>
+
+                <div class="text-mask">
+                  <p id="mainDate">12 Feb 2026</p>
+                </div>
+
+                <div class="full-article" id="mainBody">
+                  Our cardiology team has achieved a historic milestone by
+                  successfully performing a robotic-assisted mitral valve
+                  replacement. This procedure, which traditionally requires a
+                  large incision and weeks of recovery, was completed through
+                  three tiny ports. The patient, a 65-year-old male, was
+                  ambulatory within 24 hours.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="news-sidebar">
+            <div class="sidebar-header">
+              <h4 class="sidebar-title">Recent Updates</h4>
+              <div class="sidebar-line"></div>
+            </div>
+            <div class="sidebar-grid" id="sidebarGrid"></div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="medical-footer">
+        <div class="footer-grid">
+          <div class="footer-col about-col">
+            <div class="footer logo">
+              <img src="./Assets/logo-stackly.webp" alt="Medical Logo" />
+            </div>
+            <!-- <h3>MediCare<span>+</span></h3> -->
+            <p>
+              Providing trusted and professional healthcare services with modern
+              medical technology and experienced specialists.
+            </p>
+            <div class="social-links">
+              <a href="./error.html"><i class="fa-brands fa-instagram"></i></a>
+              <a href="./error.html"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="./error.html"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="./error.html"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./service.html">Our Services</a></li>
+              <li><a href="./app.html">Appointments</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <div class="contact-item">
+              <span class="icon">📍</span>
+              <p>Salem, India</p>
+            </div>
+            <div class="contact-item">
+              <span class="icon">📞</span>
+              <p>+91 1234567789</p>
+            </div>
+            <div class="contact-item">
+              <span class="icon">✉</span>
+              <p>support@stackly.com</p>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Subscribe Newsletter</h4>
+            <p>Get latest updates and medical news straight to your inbox.</p>
+            <form id="newsletterForm" class="subscribe-box">
+              <input type="email" placeholder="Enter your email" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 <strong>MediCare+</strong>. All Rights Reserved.</p>
+        </div>
+      </footer>
+
+      <div class="overlay" id="overlay"></div>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: "ease-out-cubic",
+      startEvent: "aos:ready", // manual trigger
+    });
+  </script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <script src="./script.js"></script>
+  <script src="./gsap.js"></script>
+  <script src="./swiper.js"></script>
+  <script src="./blog.js"></script>
+
+  <!-- Drop Down -->
+
+  <script>
+    const dropdown = document.querySelector(".dropdown");
+    const dropBtn = document.querySelector(".drop-btn");
+    const navLinks = document.querySelectorAll("nav ul li a");
+
+    dropBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      dropdown.classList.toggle("active");
+    });
+
+    // Close dropdown when clicking outside
+    window.addEventListener("click", function () {
+      dropdown.classList.remove("active");
+    });
+
+    // Close dropdown when clicking any other nav link
+    navLinks.forEach((link) => {
+      link.addEventListener("click", function () {
+        if (!this.closest(".dropdown")) {
+          dropdown.classList.remove("active");
+        }
+      });
+    });
+  </script>
+  <!-- Blog Hero -->
+  <script>
+    // Register ScrollTrigger
+    gsap.registerPlugin(ScrollTrigger);
+
+    const initBlogHero = () => {
+      const tl = gsap.timeline({ defaults: { ease: "power4.out" } });
+
+      // 1. Initial State Setup (Ensures no flash of content)
+      gsap.set(".bg-shape", { opacity: 0.1, scale: 0.8 });
+      gsap.set(".stat-number", { innerHTML: 0 });
+
+      // 2. Entrance Sequence
+      tl.from(".blog-hero", {
+        backgroundColor: "#ffffff",
+        duration: 1.5,
+      })
+        .from(
+          ".blog-hero-content > *",
+          {
+            y: 50,
+            autoAlpha: 0,
+            stagger: 0.12,
+            duration: 1.2,
+            clearProps: "all",
+          },
+          "-=1",
+        )
+        .from(
+          ".journal-wrapper",
+          {
+            x: 100,
+            autoAlpha: 0,
+            rotateY: -30,
+            duration: 1.5,
+          },
+          "-=1.2",
+        )
+        .from(
+          ".journal-frame",
+          {
+            x: -60,
+            y: -60,
+            autoAlpha: 0,
+            duration: 1,
+          },
+          "-=0.8",
+        );
+
+      // 3. Background Shapes Animation (Increased Visibility)
+      // Cross 1: Drifting & Pulsing
+      gsap.to(".cross-1", {
+        y: "30vh",
+        x: "10vw",
+        rotation: 120,
+        opacity: 0.2, // Higher visibility
+        duration: 12,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
+
+      // Cross 2: Slow Float
+      gsap.to(".cross-2", {
+        y: "-20vh",
+        x: "-5vw",
+        rotation: -90,
+        opacity: 0.15,
+        duration: 15,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
+
+      // Cross 3: Constant Rotation
+      gsap.to(".cross-3", {
+        rotation: 360,
+        opacity: 0.2,
+        duration: 20,
+        repeat: -1,
+        ease: "none",
+      });
+
+      // 4. Number Counter Animation
+      const stats = document.querySelectorAll(".stat-number");
+      stats.forEach((stat) => {
+        const target = parseInt(stat.getAttribute("data-target"));
+
+        // Create a scroll trigger for the counters
+        gsap.to(stat, {
+          innerText: target,
+          duration: 2.5,
+          snap: { innerText: 1 }, // Steps of 1
+          ease: "expo.out",
+          scrollTrigger: {
+            trigger: ".hero-stats-row",
+            start: "top 90%",
+          },
+          onUpdate: function () {
+            stat.innerHTML = Math.ceil(this.targets()[0].innerText);
+          },
+        });
+      });
+
+      // 5. Interactive Mouse Parallax for Background Shapes
+      // This makes the shapes move slightly when you move your mouse
+      window.addEventListener("mousemove", (e) => {
+        const { clientX, clientY } = e;
+        const xPos = clientX / window.innerWidth - 0.5;
+        const yPos = clientY / window.innerHeight - 0.5;
+
+        gsap.to(".bg-shape", {
+          x: (i) => (i + 1) * xPos * 40,
+          y: (i) => (i + 1) * yPos * 40,
+          duration: 1,
+          ease: "power2.out",
+          overwrite: "auto",
+        });
+      });
+    };
+
+    // Run on Load
+    window.addEventListener("load", initBlogHero);
+  </script>
+
+  <!-- Blog -->
+  <script>
+    /**
+     * NEWS PORTAL INTERACTION SCRIPT
+     * Features: GSAP Clip-path masking, Y-axis text reveal, and staggered sidebars.
+     */
+
+    // 1. Initialize the News Data
+    const newsData = [
+      {
+        id: 1,
+        tag: "Cardiology",
+        title: "Advanced Heart Surgery Success",
+        date: "12 Feb 2026",
+        body: "Our cardiology team has achieved a historic milestone by successfully performing a robotic-assisted mitral valve replacement. This procedure, which traditionally requires a large incision and weeks of recovery, was completed through three tiny ports. The patient, a 65-year-old male, was ambulatory within 24 hours. This success paves the way for our hospital to become a national hub for minimally invasive cardiac interventions, utilizing the latest Da Vinci surgical systems to ensure millimeter precision and drastically reduced post-operative pain.",
+        img: "./Assets/Cardiology_11zon.webp",
+      },
+      {
+        id: 2,
+        tag: "Dental Care",
+        title: "New Laser Dental Technology",
+        date: "08 Feb 2026",
+        body: "Revolutionizing the patient experience, our Dental Department has integrated the 'Solea' CO2 laser system. This technology renders traditional drills obsolete for the majority of cavity preparations. By using specific light wavelengths, we can now perform fillings and soft-tissue surgeries without the need for local anesthesia (needles). The laser creates a natural analgesic effect while simultaneously disinfecting the area. Patients can now experience 'silent' dentistry with zero vibration and near-instant recovery times, making it ideal for those with dental anxiety.",
+        img: "./Assets/Dental care_11zon.webp",
+      },
+      {
+        id: 3,
+        tag: "Pediatrics",
+        title: "Childhood Immunization Guide",
+        date: "28 Jan 2026",
+        body: "As we enter the 2026 flu season, our pediatric specialists have released an updated immunization roadmap. Beyond standard vaccinations, the guide introduces the new combined mRNA respiratory panels that protect infants from RSV, Influenza, and COVID-19 in a single dose. We emphasize the importance of herd immunity within school environments and offer private 'calm clinics' for children with sensory sensitivities. Our mission is to ensure every child has a tear-free experience while receiving life-saving protection against evolving viral strains.",
+        img: "./Assets/Pediatrics_11zon.webp",
+      },
+      {
+        id: 4,
+        tag: "Neurology",
+        title: "AI-Enhanced Stroke Recovery",
+        date: "15 Mar 2026",
+        body: "Our neurology department has begun trials on a groundbreaking neuro-rehabilitation system that uses AI-driven exoskeletons. By analyzing neural signals in real-time, the system anticipates the patient's intended movement and provides precise mechanical assistance. This 'closed-loop' feedback has shown to accelerate the formation of new neural pathways in stroke survivors by 40% compared to traditional physical therapy. The integration of virtual reality environments also keeps patients engaged, turning repetitive exercises into an immersive and rewarding recovery journey.",
+        img: "./Assets/Neurology_11zon.webp",
+      },
+      {
+        id: 5,
+        tag: "Dermatology",
+        title: "Breakthrough in Psoriasis Treatment",
+        date: "02 Mar 2026",
+        body: "We are proud to announce the availability of a new biological therapy that targets specific interleukin-23 proteins responsible for inflammatory skin conditions. Unlike broad-spectrum immunosuppressants, this targeted approach clears skin plaques with minimal side effects. Clinical data from our 2026 patient cohort shows that 90% of participants achieved completely clear skin within 12 weeks of starting the treatment. This marks a significant shift in chronic skin condition management, moving away from topical steroids toward long-term systemic health and cellular-level repair.",
+        img: "./Assets/Dermatology_11zon.webp",
+      },
+      {
+        id: 6,
+        tag: "Ophthalmology",
+        title: "Next-Gen Bionic Eye Implants",
+        date: "22 Feb 2026",
+        body: "Our surgical team has successfully completed the first regional implantation of a high-resolution subretinal chip. Designed for patients with advanced retinitis pigmentosa, the device bypasses damaged photoreceptors to transmit visual data directly to the optic nerve. The 2026 model features a doubled pixel density, allowing patients to recognize shapes and navigate environments with unprecedented clarity. Coupled with a pair of specialized smart-glasses that process light data, this technology is bringing functional sight back to those who have lived in darkness for decades.",
+        img: "./Assets/Ophthalmology_11zon.webp",
+      },
+      {
+        id: 7,
+        tag: "Emergency Care",
+        title: "Tele-Emergency Response Drones",
+        date: "10 Feb 2026",
+        body: "In a race against time, our hospital has launched a fleet of medical response drones equipped with automated external defibrillators (AEDs) and trauma kits. When an emergency call is placed, these drones are dispatched ahead of the ambulance, guided by AI to avoid urban traffic. Once on-site, a remote physician connects via live-video to guide bystanders through life-saving procedures. This 'Eye-in-the-Sky' program has already reduced critical intervention times by an average of 6 minutes, significantly improving survival rates for cardiac arrest incidents across the metropolitan area.",
+        img: "./Assets/glucose_11zon_11zon.webp",
+      },
+    ];
+
+    // 2. Function to Render the Sidebar Cards
+    const renderSidebar = () => {
+      const sidebarContainer = document.getElementById("sidebarGrid");
+
+      sidebarContainer.innerHTML = newsData
+        .map(
+          (item, index) => `
+    <div class="side-card ${index === 0 ? "active" : ""}" onclick="swapNews(${item.id}, event)">
+      <img src="${item.img}" alt="${item.title}">
+      <div class="side-card-content">
+        <span class="blog-tag" style="font-size: 10px; padding: 2px 8px;">${item.tag}</span>
+        <h5>${item.title}</h5>
+      </div>
+    </div>
+  `,
+        )
+        .join("");
+    };
+
+    // 3. The "Superior" Swap Animation Logic
+    function swapNews(id, event) {
+      const news = newsData.find((n) => n.id === id);
+      const mainImg = document.getElementById("mainImg");
+      const mainTitle = document.getElementById("mainTitle");
+      const mainTag = document.getElementById("mainTag");
+      const mainDate = document.getElementById("mainDate");
+      const mainBody = document.getElementById("mainBody");
+
+      // Prevent animation if the clicked article is already active
+      if (mainTitle.innerText === news.title) return;
+
+      // Create Master Timeline
+      const tl = gsap.timeline({
+        defaults: { ease: "expo.inOut", duration: 0.8 },
+      });
+
+      // PHASE 1: HIDE CURRENT CONTENT
+      tl.to(".image-mask", {
+        clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)", // Slide up mask
+        duration: 0.6,
+      })
+        .to(
+          [mainTag, mainTitle, mainDate],
+          {
+            yPercent: 105, // Slide text down into the mask
+            stagger: 0.05,
+          },
+          "-=0.4",
+        )
+        .to(
+          mainBody,
+          {
+            opacity: 0,
+            y: 15,
+            duration: 0.4,
+          },
+          "-=0.5",
+        )
+
+        // PHASE 2: UPDATE THE DOM
+        .add(() => {
+          mainImg.src = news.img;
+          mainTag.innerText = news.tag;
+          mainTitle.innerText = news.title;
+          mainDate.innerText = news.date;
+          mainBody.innerText = news.body;
+
+          // Update UI Active State
+          document
+            .querySelectorAll(".side-card")
+            .forEach((card) => card.classList.remove("active"));
+          event.currentTarget.classList.add("active");
+
+          // Scroll Main Display to top on content change
+          document
+            .getElementById("mainDisplay")
+            .scrollTo({ top: 0, behavior: "smooth" });
+        })
+
+        // PHASE 3: REVEAL NEW CONTENT
+        .to(".image-mask", {
+          clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", // Unroll mask
+          duration: 1.1,
+        })
+        .fromTo(
+          [mainTag, mainTitle, mainDate],
+          { yPercent: 105 },
+          { yPercent: 0, stagger: 0.1, duration: 0.9 },
+          "-=0.8",
+        )
+        .fromTo(
+          mainBody,
+          { opacity: 0, y: 15 },
+          { opacity: 1, y: 0, duration: 0.7 },
+          "-=0.6",
+        );
+    }
+
+    // 4. Initial Load Animations
+    window.addEventListener("DOMContentLoaded", () => {
+      // Draw the sidebar
+      renderSidebar();
+
+      // Entrance Timeline
+      const entranceTl = gsap.timeline({ defaults: { ease: "power4.out" } });
+
+      entranceTl
+        .from(".active-news-display", {
+          x: -50,
+          opacity: 0,
+          duration: 1.2,
+        })
+        .from(
+          ".image-mask",
+          {
+            clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)", // Horizontal reveal
+            duration: 1.5,
+          },
+          "-=0.8",
+        )
+        .from(
+          ".side-card",
+          {
+            x: 40,
+            opacity: 0,
+            stagger: 0.12,
+            duration: 1,
+          },
+          "-=1",
+        );
+    });
+  </script>
+
+    <script>
+  const newsletterForm = document.getElementById("newsletterForm");
+
+  if (newsletterForm) {
+    newsletterForm.addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent default reload
+
+      // If validation passes → redirect
+      if (newsletterForm.checkValidity()) {
+        window.location.href = "./error.html";
+      }
+    });
+  }
+</script>
+</html>

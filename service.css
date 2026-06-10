@@ -1,0 +1,1807 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  /* background-color: black; */
+  /* color: white; */
+  font-family: "lora", serif;
+  overflow-x: hidden;
+  background-color: #f4f9ff;
+}
+
+button {
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1099;
+}
+
+.header1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  font-family: "Roboto Slab", serif;
+  background-color: #0252a9;
+  color: white;
+  z-index: 500;
+  /* display: none; */
+}
+
+.header1 .container1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header1 .container1 h3 {
+  font-weight: 600;
+}
+
+.header1 .container2 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+.header1 .container2 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.header2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  font-size: x-large;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  color: #0252a9;
+  height: max-content;
+  background-color: white;
+  z-index: 10000;
+  height: 10vh;
+}
+
+.logo img {
+  width: 160px;
+  margin-top: 10px;
+}
+
+.login i {
+  font-weight: 700;
+  text-decoration: none;
+  color: #0252a9;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+nav ul li {
+  list-style: none;
+  position: relative;
+}
+
+nav ul li a {
+  font-size: 20px;
+  font-weight: 900;
+  text-decoration: none;
+  position: relative;
+  color: #0252a9;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: #0252a9;
+  left: 0;
+  bottom: -10px;
+  transition: all 0.6s ease;
+  border-radius: 5px;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* --- The Dropdown Container Layout --- */
+.dropdown {
+  display: flex;
+  align-items: center;
+  z-index: 10000;
+}
+
+/* --- The Toggle (Caret) Specific Styling --- */
+.drop-toggle {
+  cursor: pointer;
+  margin-left: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px; /* Increases clickable area for the arrow */
+}
+
+.drop-toggle i {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+  pointer-events: none; /* Ensures the click registers on the span */
+}
+
+/* --- The Dropdown Menu --- */
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* Sits right below the nav item */
+  left: 0;
+  background: aliceblue;
+  width: max-content;
+  min-width: 150px;
+  padding: 5px 10px 15px 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+  /* Hidden State */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  list-style: none;
+}
+
+/* Dropdown Menu Items */
+.dropdown-menu li {
+  padding: 0;
+  display: block;
+}
+
+.dropdown-menu li a {
+  padding: 10px 20px;
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.dropdown-menu li a:hover {
+  /* background-color: rgba(2, 82, 169, 0.05); */
+}
+
+/* --- Active States (Triggered by JS) --- */
+
+/* Show the menu */
+.dropdown.active .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Rotate the caret icon */
+.dropdown.active .drop-toggle i {
+  transform: rotate(180deg);
+}
+
+/* MobileBar Hamburger */
+
+.mobilebar {
+  display: none;
+}
+
+/* Hamburger Box */
+.hamburger-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid blue;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Lines */
+.line {
+  width: 25px;
+  height: 3px;
+  background: #0252a9;
+  margin: 4px 0;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+
+/* Hamburger to X animation */
+.hamburger.active .line1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .line2 {
+  opacity: 0;
+}
+
+.hamburger.active .line3 {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile visibility */
+.mobilebar {
+  display: none; /* Hidden by default */
+}
+
+@media screen and (max-width: 1180px) {
+  .mobilebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header1 {
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .header1 .container1 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header1 .container2 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  header {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header1 {
+    font-size: small;
+  }
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.btn {
+  background: turquoise;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: large;
+  position: relative;
+  overflow: hidden;
+  max-width: fit-content;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #0252a9;
+}
+
+.btn::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -150%;
+  width: 150%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(232, 227, 228, 0.95),
+    transparent
+  );
+  transform: skewX(-25deg);
+  transition: all 1.2s ease;
+}
+
+.btn:hover::after {
+  left: 150%;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1180px) {
+  .mobilebar {
+    display: block;
+  }
+  .header2 .btn {
+    display: none;
+  }
+
+  header nav ul {
+    display: none;
+  }
+  .header1 {
+    display: none;
+  }
+}
+
+.subheader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  font-family: "Roboto Slab", serif;
+  background-color: #0252a9;
+  color: white;
+  z-index: 2000;
+  display: none;
+}
+
+/* container1 */
+.subheader .container1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.subheader .container1 h3 {
+  font-weight: 600;
+}
+
+/* container2 */
+.subheader .container2 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+.subheader .container2 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1180px) {
+  .subheader {
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .subheader .container1 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subheader .container2 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .subheader {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .subheader {
+    font-size: small;
+  }
+}
+
+/* Sidebar */
+
+body.no-scroll {
+  overflow: hidden;
+  height: 100vh; /* Prevent mobile bounce */
+}
+
+/* Sidebar scrollable independently */
+.sidebar {
+  /* overflow-y: auto; */
+  -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
+}
+
+.sidebar {
+  position: fixed;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background: #f8fbff;
+  padding: 120px 30px;
+  transition: left 0.4s ease;
+  z-index: 999;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 60px;
+  transition: all 0.9s ease;
+  font-family: "Roboto Slab", serif;
+}
+
+.sidebar.active {
+  left: 0;
+  top: 0;
+}
+
+.sidebar ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.sidebar ul li {
+  list-style: none;
+}
+
+.sidebar ul li a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #0252a9;
+
+  /* text-shadow:
+    0 0 6px rgba(255, 95, 126, 0.6),
+    0 0 14px rgba(255, 154, 60, 0.55),
+    0 0 28px rgba(255, 154, 60, 0.4); */
+}
+
+.sidebar-login {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-btn {
+  width: max-content;
+  position: relative;
+  padding: 12px 28px;
+  font-size: large;
+  font-weight: 800;
+  border-radius: 6px;
+  cursor: pointer;
+  overflow: hidden; /* IMPORTANT */
+
+  border: 2px solid black;
+  background: #0252a9;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* SHIMMER LAYER */
+.login-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 150%;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(232, 227, 228, 0.95),
+    transparent
+  );
+
+  transform: skewX(-25deg);
+}
+
+/* Hover shimmer */
+.login-btn:hover::before {
+  animation: shimmerSweep 0.9s ease-in-out;
+}
+
+/* Animation */
+@keyframes shimmerSweep {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
+@media screen and (min-width: 1181px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    gap: 50px;
+  }
+  .sidebar ul {
+    gap: 15px;
+  }
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  z-index: 998;
+}
+
+.overlay.active {
+  display: block;
+}
+
+@media screen and (max-width: 650px) {
+  .sidebar {
+    font-size: larger;
+    padding: 90px 30px;
+  }
+  .sidebar-login .login-btn {
+    padding: 10px 15px;
+    font-size: large;
+  }
+  .header2 {
+    padding: 10px 15px;
+  }
+}
+
+/* --- Menu Item Borders --- */
+.menu-item {
+  border-bottom: 1px solid rgba(2, 82, 169, 0.1); /* Subtle blue border */
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+/* --- Dropdown Logic --- */
+.dropdown-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.drop-caret {
+  cursor: pointer;
+  color: #0252a9;
+  padding: 5px 15px;
+  transition: transform 0.4s ease;
+  font-size: 24px;
+}
+
+.drop-caret.rotate {
+  transform: rotate(180deg);
+}
+
+/* --- Submenu (Hidden by default) --- */
+.submenu {
+  max-height: 0; /* Changed from 100% to 0 */
+  overflow: hidden;
+  list-style: none;
+  background: rgba(2, 82, 169, 0.03);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 0.4s ease-in-out;
+  padding: 0 5px;
+}
+
+.submenu.open {
+  max-height: 200px; /* Adjust based on content */
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.submenu li a {
+  font-size: 20px !important;
+  color: #0252a9 !important;
+  font-weight: 500 !important;
+}
+
+/* --- Hover Effects --- */
+.sidebar ul li a:hover {
+  color: #0d6efd !important;
+  padding-left: 10px;
+}
+
+.sidebar ul li a {
+  transition: all 0.3s ease;
+}
+
+/* ================= PREMIUM MEDICAL LOADER ================= */
+
+.medical-loader {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #f5faff, #e6f2ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  transition:
+    opacity 0.8s ease,
+    visibility 0.8s ease;
+}
+
+.loader-wrapper {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+}
+
+/* ================= MEDICAL CROSS ================= */
+
+.medical-cross {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 30px;
+}
+
+.medical-cross span {
+  position: absolute;
+  background: #0252a9;
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgba(2, 82, 169, 0.6);
+}
+
+.medical-cross span:first-child {
+  width: 70px;
+  height: 20px;
+  top: 25px;
+  left: 0;
+}
+
+.medical-cross span:last-child {
+  width: 20px;
+  height: 70px;
+  left: 25px;
+  top: 0;
+}
+
+.medical-cross {
+  animation: crossGlow 1.5s infinite ease-in-out;
+}
+
+@keyframes crossGlow {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+/* ================= ECG LINE ================= */
+
+.ecg-line {
+  width: 250px;
+  margin: 0 auto 20px;
+  overflow: hidden;
+}
+
+.ecg-line svg {
+  width: 500px;
+  height: 60px;
+}
+
+.ecg-line path {
+  fill: none;
+  stroke: red;
+  stroke-width: 4;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: ecg 2s linear infinite;
+}
+
+@keyframes ecg {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* ================= TEXT ================= */
+
+.loading-text {
+  color: #0252a9;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* ================= HIDE ================= */
+
+.medical-loader.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+main {
+  margin-top: 10vh;
+}
+
+/* --- Hero Section --- */
+/* ==========================================================================
+   SERVICE HERO SECTION - FULL STYLES
+   ========================================================================== */
+
+.service-hero {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 5% 50px 5%; /* Top padding accounts for fixed header */
+  overflow: hidden;
+  background-color: #f8fafc;
+  position: relative;
+}
+
+/* Background Decoration (Optional Subtle Gradient) */
+.service-hero::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(
+    circle,
+    rgba(2, 82, 169, 0.03) 0%,
+    transparent 70%
+  );
+  top: -100px;
+  left: -100px;
+  z-index: 1;
+}
+
+/* --- Left Side Content --- */
+.hero-content {
+  width: 50%;
+  z-index: 10;
+  position: relative;
+}
+
+.hero-subtitle {
+  color: #0252a9;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.hero-title {
+  font-size: clamp(32px, 5vw, 50px);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  color: #0f172a;
+  font-family: "Roboto Slab", serif;
+}
+
+.hero-title span {
+  color: #0252a9;
+  position: relative;
+}
+
+.hero-desc {
+  font-size: 18px;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 35px;
+  max-width: 550px;
+}
+
+/* Button & Contact Group */
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.hero-btn {
+  width: max-content;
+  position: relative;
+  z-index: 20;
+  display: inline-block;
+  padding: 18px 38px;
+  background: #0252a9;
+  color: white !important;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 20px rgba(2, 82, 169, 0.2);
+  overflow: hidden; /* For Shimmer */
+}
+
+/* Shimmer Effect */
+.hero-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transform: skewX(-25deg);
+  transition: none;
+}
+
+.hero-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(2, 82, 169, 0.3);
+  background: #013d7e;
+}
+
+.hero-btn:hover::after {
+  left: 150%;
+  transition: all 0.8s ease-in-out;
+}
+
+.hero-contact {
+  color: #0f172a;
+  text-decoration: none;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+  opacity: 1; /* Ensure base opacity is 1 */
+}
+
+.hero-contact i {
+  width: 40px;
+  height: 40px;
+  background: #0252a9; /* Brand Blue Background */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff; /* CHANGE THIS TO WHITE */
+  box-shadow: 0 5px 15px rgba(2, 82, 169, 0.2);
+  transition: 0.3s;
+}
+
+.hero-contact:hover {
+  color: #0252a9;
+}
+
+.hero-contact:hover i {
+  transform: scale(1.1);
+  background: #013d7e; /* Darker blue on hover */
+}
+
+/* Trust Section */
+.hero-trust {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.trust-avatars {
+  display: flex;
+  align-items: center;
+}
+
+.trust-avatars img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-left: -15px;
+  object-fit: cover;
+}
+
+.trust-avatars img:first-child {
+  margin-left: 0;
+}
+
+.avatar-plus {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #0252a9;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  border: 3px solid white;
+  margin-left: -15px;
+}
+
+.trust-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.trust-text strong {
+  color: #0f172a;
+  font-size: 16px;
+  display: block;
+}
+
+.trust-text span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* --- Right Side (Image & 3D Tilt) --- */
+.hero-image-container {
+  width: 50%;
+  position: relative;
+  z-index: 5;
+  perspective: 2000px; /* Creates the 3D space */
+}
+
+.hero-image-wrapper {
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.hero-image {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.2);
+  background: #e2e8f0;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+/* Floating Elements */
+.floating-badge {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  background: white;
+  padding: 15px 25px;
+  border-radius: 15px;
+  font-weight: 800;
+  color: #0f172a;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 10;
+}
+
+.floating-badge i {
+  color: #ef4444;
+  font-size: 20px;
+}
+
+.experience-card {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  background: #0252a9;
+  color: white;
+  padding: 18px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 30px rgba(2, 82, 169, 0.25);
+  z-index: 10;
+  min-width: 100px;
+}
+
+.experience-card h4 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.experience-card p {
+  font-size: 12px;
+  opacity: 0.9;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ==========================================================================
+   RESPONSIVE STYLES
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+  .hero-image-container {
+    width: 50%;
+  }
+  .hero-title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 1092px) {
+  .service-hero {
+    flex-direction: column;
+    padding-top: 50px;
+    text-align: center;
+  }
+  .btn-group {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-content {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .hero-desc {
+    margin: 0 auto 35px;
+  }
+
+  .btn-group {
+    justify-content: center;
+  }
+
+  .hero-trust {
+    justify-content: center;
+  }
+
+  .hero-image-container {
+    width: 80%;
+    max-width: 500px;
+  }
+
+  .experience-card {
+    right: 0;
+  }
+  .floating-badge {
+    left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 36px;
+  }
+  .btn-group {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hero-image-container {
+    width: 100%;
+  }
+}
+
+/* Ensure the parent allows absolute positioning */
+.service-hero {
+  position: relative;
+  overflow: hidden; /* Keeps circles from causing scrollbars */
+  z-index: 1;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(
+    1px
+  ); /* If blur is too high, they disappear; try 40px if needed */
+  z-index: 0; /* Sit behind content */
+  pointer-events: none; /* Allows clicking through to buttons */
+}
+
+/* --- Background Circles with Brand Blue Variations --- */
+.circle-1 {
+  width: 350px;
+  height: 350px;
+  /* Deep Brand Blue - Low Opacity */
+  background: rgba(2, 82, 169, 0.18);
+  top: -50px;
+  left: -80px;
+}
+
+.circle-2 {
+  width: 280px;
+  height: 280px;
+  /* Brighter / Lighter Medical Blue */
+  background: rgba(0, 150, 255, 0.12);
+  bottom: 15%;
+  left: 10%;
+}
+
+.circle-3 {
+  width: 200px;
+  height: 200px;
+  /* Muted Soft Slate Blue */
+  background: rgba(7, 62, 120, 0.08);
+  top: 25%;
+  left: 30%;
+}
+
+/* Ensure content stays on top */
+.hero-content {
+  position: relative;
+  z-index: 10;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* --- Shared Styles --- */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* --- Section 1: Clinical Departments --- */
+.clinical-departments {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.sub-reveal {
+  color: #0252a9;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+.section-title {
+  font-size: 38px;
+  color: #0f172a;
+  margin-top: 10px;
+  font-weight: 800;
+}
+
+.dept-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.dept-card {
+  padding: 40px;
+  background: #f8fafc;
+  background: rgba(240, 248, 255, 0.888);
+  border-radius: 24px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  border-color: #0252a9;
+}
+
+.dept-icon {
+  width: 60px;
+  height: 60px;
+  background: white;
+  color: #0252a9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 20px rgba(2, 82, 169, 0.05);
+}
+
+.dept-card h3 {
+  color: #0f172a;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+.dept-card p {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.dept-link {
+  text-decoration: none;
+  color: #0252a9;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+}
+
+.dept-card:hover {
+  transform: translateY(-10px);
+  background: #fff;
+  box-shadow: 0 20px 40px rgba(2, 82, 169, 0.08);
+}
+
+/* --- Section 2: Emergency & Critical Care --- */
+.critical-care-section {
+  padding: 100px 0;
+  background: #0f172a; /* Deep Dark Blue */
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+}
+
+.critical-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.critical-content {
+  flex: 1;
+}
+.critical-image-box {
+  flex: 1;
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.critical-image-box img {
+  width: 100%;
+  display: block;
+}
+
+.emergency-tag {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  padding: 6px 15px;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.critical-title {
+  font-size: 42px;
+  margin: 20px 0;
+  font-weight: 800;
+}
+.critical-desc {
+  color: #94a3b8;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.emergency-item {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+.e-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0252a9;
+  font-size: 20px;
+}
+
+.emergency-item h4 {
+  margin-bottom: 5px;
+  color: #fff;
+}
+.emergency-item p {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.call-now-btn {
+  position: relative; /* Required for shimmer */
+  overflow: hidden;    /* Clips the shimmer beam */
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  background: #ef4444;
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 20px;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(239, 68, 68, 0.3);
+  transition: all 0.7s ease;
+}
+
+/* The Shimmer Beam */
+.call-now-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: emergency-shimmer 3s infinite;
+}
+
+/* Hover States */
+.call-now-btn:hover {
+  transform: scale(1.05);
+  background: #dc2626; /* Darker red */
+  box-shadow: 0 0px 30px rgba(239, 68, 68, 0.4);
+}
+
+/* The Animation Keyframes */
+@keyframes emergency-shimmer {
+  0% {
+    left: -100%;
+  }
+  20% {
+    left: 150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
+/* Red Pulse Animation for Image */
+.pulse-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: rgba(239, 68, 68, 0.4);
+  border-radius: 50%;
+  animation: pulse-emergency 2s infinite;
+}
+
+@keyframes pulse-emergency {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .dept-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .critical-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .emergency-item {
+    justify-content: center;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .dept-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .critical-title {
+    font-size: 28px;
+  }
+  .call-now-btn {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .call-now-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+.diagnostics-section { padding: 100px 0; background: #fff; }
+.diag-wrapper { display: flex; align-items: center; gap: 60px; }
+.diag-content { flex: 1; }
+.diag-visual { flex: 1.2; position: relative; }
+
+.diag-image-container {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+}
+
+.diag-image-container img { width: 100%; display: block; transition: 0.5s; }
+
+.imaging-badge {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    z-index: 5;
+}
+
+.imaging-badge i { color: #0252a9; font-size: 20px; }
+.imaging-badge span { font-weight: 800; color: #0f172a; font-size: 14px; line-height: 1.2; }
+
+.diag-item { display: flex; gap: 20px; margin-bottom: 25px; }
+.diag-icon-small { 
+    color: #0252a9; font-size: 22px; margin-top: 5px; 
+}
+
+.diag-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-desc {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 992px) {
+    .diag-wrapper { flex-direction: column; }
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+.modern-healthcare { padding: 100px 0; background: #f8fafc; }
+.section-header.center { text-align: center; margin-bottom: 60px; }
+
+.modern-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.modern-card {
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: 0.4s;
+}
+
+.m-card-img { height: 200px; overflow: hidden; }
+.m-card-img img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+
+.m-card-body { padding: 30px; text-align: center; position: relative; }
+.m-card-body i {
+    width: 60px; height: 60px;
+    background: #0252a9; color: white;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin: -60px auto 20px;
+    border: 5px solid white;
+    font-size: 20px;
+}
+
+.modern-card:hover { transform: translateY(-10px); }
+.modern-card:hover .m-card-img img { scale: 1.1; }
+
+@media screen and (max-width:990px) {
+    .modern-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .modern-grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .diagnostics-section,.modern-healthcare,.critical-care-section,.clinical-departments {
+        padding: 50px 0px;
+    }
+}
+@media screen and (max-width:600px) {
+    .diagnostics-section,.modern-healthcare,.critical-care-section,.clinical-departments {
+        padding: 30px 0px;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+.medical-footer {
+  background: #ffffff; /* White Background */
+  color: #1e293b;
+  padding: 80px 20px;
+  border-top: 1px solid #f1f5f9;
+  font-weight: 600;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr 1fr 1.5fr;
+  gap: 50px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+/* Typography */
+.footer-col h3 {
+  font-size: 24px;
+  color: #0252a9;
+  margin: 15px 0;
+}
+
+.footer-col h3 span {
+  color: #0d6efd;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #0f172a;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+/* Underline decoration for titles */
+.footer-col h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 30px;
+  height: 2px;
+  background: #0252a9;
+}
+
+.footer-col p {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.6;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* List & Links Hover Effects */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #64748b;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.footer-col ul li a:hover {
+  color: #0252a9;
+  transform: translateX(8px); /* Slide effect */
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  text-decoration: none;
+}
+
+.social-links a i {
+  color: #3282d7;
+}
+
+.social-links a i:hover {
+  color: #084298;
+}
+
+/* Contact Items */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.contact-item .icon {
+  color: #0252a9;
+  font-size: 18px;
+}
+
+/* Subscribe Box Design */
+.subscribe-box {
+  display: flex;
+  margin-top: 20px;
+  background: #f8fafc;
+  padding: 6px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.subscribe-box:focus-within {
+  border-color: #0252a9;
+  box-shadow: 0 0 0 4px rgba(2, 82, 169, 0.05);
+}
+
+.subscribe-box input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.subscribe-box button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #0252a9;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subscribe-box button:hover {
+  background: #013d7e;
+  box-shadow: 0 4px 12px rgba(2, 82, 169, 0.2);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  padding: 10px 25px;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.footer-bottom strong {
+  color: #0252a9;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-col h4::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .contact-item {
+    justify-content: center;
+  }
+
+  .subscribe-box {
+    flex-direction: column;
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  .subscribe-box input {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------- */

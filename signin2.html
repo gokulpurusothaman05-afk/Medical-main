@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>Sign In | Stackly Medical</title>
+    <link rel="icon" href="./Assets/logo-icon.webp" />
+    <link rel="stylesheet" href="./login2.css" />
+    <link rel="stylesheet" href="./layout.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header1">
+        <div class="container1">
+          <h3>Welcome To Stackly Medical Health-Care Services.</h3>
+        </div>
+        <div class="container2">
+          <div>
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>(123)456-7890</p>
+          </div>
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+            <p>Support@stackly.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="header2">
+        <div class="logo">
+          <a href="./index2.html">
+            <img src="./Assets/logo-stackly.webp" alt="Logo" />
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="./index2.html">Home</a>
+              <span class="drop-toggle">
+                <i class="fa-solid fa-caret-down"></i>
+              </span>
+              <ul class="dropdown-menu">
+                <li><a href="./index.html">Home 1</a></li>
+              </ul>
+            </li>
+            <li><a href="./health.html">Health Packages</a></li>
+            <li><a href="./treatments.html">Treatments</a></li>
+            <li><a href="./patient.html">Patient Resources</a></li>
+            <li><a href="./contact2.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="icons">
+          <div class="login">
+            <a href="./signin2.html" aria-label="Sign In">
+              <i class="fa-regular fa-circle-user"></i>
+            </a>
+          </div>
+          <div class="mobilebar">
+            <div class="hamburger-box">
+              <div class="hamburger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li class="menu-item"><a href="./index2.html">Home</a></li>
+        <li class="menu-item"><a href="./health.html">Health Packages</a></li>
+        <li class="menu-item"><a href="./treatments.html">Treatments</a></li>
+        <li class="menu-item"><a href="./patient.html">Patient Resources</a></li>
+        <li class="menu-item"><a href="./contact2.html">Contact Us</a></li>
+        <li class="menu-item"><a href="./signin2.html">Sign In</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <div class="subheader">
+        <div class="container1">
+          <h3>Welcome To Stackly Medical Health-Care Services.</h3>
+        </div>
+        <div class="container2">
+          <div>
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>(123)456-7890</p>
+          </div>
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+            <p>Support@stackly.com</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="overlay" id="overlay"></div>
+
+    <section class="Structure">
+      <div class="login-wrapper">
+        <div class="login-card">
+          <div class="login-left">
+            <h1>Welcome back to <span>Stackly Medical</span></h1>
+            <ul>
+              <li>✔ One account for appointments & reports</li>
+              <li>✔ Secure medical data protection</li>
+              <li>✔ Fast & smooth healthcare access</li>
+              <li>✔ Access to your medical history</li>
+            </ul>
+          </div>
+          <div class="login-right">
+            <h2>Sign In</h2>
+            <p>Access your patient portal and resources.</p>
+            <form id="signinForm" method="post" action="#" novalidate>
+              <div class="input-group email-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="username"
+                  placeholder="you@gmail.com"
+                  required
+                />
+              </div>
+              <div class="input-group password-group">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  autocomplete="current-password"
+                  placeholder="Password"
+                  required
+                />
+                <span id="togglePassword" role="button" tabindex="0">Show</span>
+              </div>
+              <a href="./forgotpassword2.html" class="forgot">Forgot password?</a>
+              <button type="submit" class="login-btn1">Sign In</button>
+              <div class="signup">
+                <p>New here? <a href="./signup2.html">Create an account</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./auth.js"></script>
+    <script>
+      AOS.init({ once: true, duration: 1000, easing: "ease-out-cubic" });
+
+      const togglePassword = document.getElementById("togglePassword");
+      const password = document.getElementById("password");
+      const form = document.getElementById("signinForm");
+
+      togglePassword.addEventListener("click", () => {
+        const type = password.type === "password" ? "text" : "password";
+        password.type = type;
+        togglePassword.textContent = type === "password" ? "Show" : "Hide";
+      });
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const email = document.getElementById("email").value.trim();
+        const pass = password.value.trim();
+        if (!validateMedicalCredentials(email, pass)) return;
+        StacklyAuth.signIn(email);
+        window.location.href = "./patient.html";
+      });
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+/* Shared layout spacing — header clearance, banner gap, section rhythm */
+:root {
+  --header-height: calc(10vh + 58px);
+  --banner-gap: 36px;
+  --section-gap: 70px;
+}
+
+@media screen and (max-width: 1180px) {
+  :root {
+    --header-height: 10vh;
+  }
+}
+
+main {
+  margin-top: var(--header-height) !important;
+}
+
+/* Gap between fixed header and page banner / hero headings */
+.hero,
+.about-hero,
+.service-hero,
+.blog-hero,
+.hero-treatment,
+.contact-hub,
+.Appointment-v2,
+.header-box,
+.Structure {
+  padding-top: var(--banner-gap);
+}
+
+.Structure {
+  margin-top: var(--header-height);
+  min-height: calc(100vh - var(--header-height));
+  height: auto !important;
+}
+
+section {
+  padding-top: var(--section-gap) !important;
+  padding-bottom: var(--section-gap) !important;
+}
+
+/* Auth forms outside main still need header clearance */
+body > .Structure {
+  margin-top: var(--header-height);
+}

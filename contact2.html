@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <title>Medical</title>
+    <link rel="icon" href="./Assets/logo-icon.webp" />
+    <link rel="stylesheet" href="./contact2.css" />
+    <link rel="stylesheet" href="./layout.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Premium Medical Loader -->
+    <div class="medical-loader" id="medicalLoader">
+      <div class="loader-wrapper">
+        <div class="medical-cross">
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="ecg-line">
+          <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+            <path
+              d="M0 50 L70 50 L90 20 L110 80 L130 50 L200 50 L220 30 L240 70 L260 50 L500 50"
+            />
+          </svg>
+        </div>
+
+        <h3 class="loading-text">Preparing Your Care Experience...</h3>
+      </div>
+    </div>
+
+    <div class="the-main">
+      <header>
+        <div class="header1">
+          <div class="container1">
+            <h3>Welcome To Stackly Medical Health-Care Services.</h3>
+          </div>
+          <div class="container2">
+            <div>
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>(123)456-7890</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>Support@stackly.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="header2">
+          <div class="logo">
+            <a href="./index2.html">
+              <img src="./Assets/logo-stackly.webp" alt="Logo" />
+            </a>
+          </div>
+
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index2.html">Home </a>
+
+                <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index.html">Home 1</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./health.html">Health Packages</a></li>
+              <li><a href="./treatments.html">Treatments</a></li>
+              <li><a href="./patient.html">Patient Resources</a></li>
+              <li><a href="./contact2.html">Contact Us</a></li>
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <!-- <a class="btn" href="./error.html">Appointment</a> -->
+
+              <a href="./signin2.html">
+                <i class="fa-regular fa-circle-user"></i>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li
+            class="has-dropdown menu-item"
+            data-aos="fade-up-right"
+            data-aos-delay="100"
+          >
+            <div class="dropdown-header">
+              <a href="./index2.html">Home</a>
+              <span class="drop-caret" id="home-caret">▾</span>
+            </div>
+            <ul class="submenu" id="home-dropdown">
+              <li><a href="./index.html">Home 1</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="150">
+            <a href="./health.html">Health Packages</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="200">
+            <a href="./treatments.html">Treatments</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="250">
+            <a href="./patient.html">Patient Resources</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="300">
+            <a href="./contact2.html">Contact Us</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="400">
+            <a href="./signin2.html">Sign In</a>
+          </li>
+        </ul>
+
+        <div class="sidebar-login">
+          <!-- <a href="./error.html" data-aos="fade-up">
+            <button class="login-btn">Book an Appointment</button>
+          </a> -->
+        </div>
+      </div>
+
+      <main></main>
+
+      <section class="Home2-Contact-Wrapper">
+        <div class="dept-connector">
+          <div class="container">
+            <div class="v2-main-head">
+              <span class="v2-top-tag">Direct Lines</span>
+              <h2 class="v2-title">
+                Connect with <span class="v2-gradient">Specialists</span>
+              </h2>
+            </div>
+            <div class="v2-grid-row">
+              <div class="v2-dept-box" data-dept="cardiology">
+                <div class="v2-icon-circle">
+                  <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <h3>Cardiology Unit</h3>
+                <p>Immediate inquiry for cardiac care and rhythm monitoring.</p>
+                <div class="v2-status-line">
+                  <span class="v2-timer"
+                    ><i class="fa-solid fa-clock"></i> 4 min wait</span
+                  >
+                  <a href="tel:+123456789" class="v2-call-icon"
+                    ><i class="fa-solid fa-phone"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="v2-dept-box" data-dept="neurology">
+                <div class="v2-icon-circle">
+                  <i class="fa-solid fa-brain"></i>
+                </div>
+                <h3>Neurology Center</h3>
+                <p>Consultations for neuro-diagnostics and brain health.</p>
+                <div class="v2-status-line">
+                  <span class="v2-timer"
+                    ><i class="fa-solid fa-clock"></i> 12 min wait</span
+                  >
+                  <a href="tel:+123456789" class="v2-call-icon"
+                    ><i class="fa-solid fa-phone"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="v2-dept-box active-now" data-dept="pediatrics">
+                <div class="v2-icon-circle">
+                  <i class="fa-solid fa-baby"></i>
+                </div>
+                <h3>Pediatric Care</h3>
+                <p>
+                  Dedicated emergency and routine care for infants and children.
+                </p>
+                <div class="v2-status-line">
+                  <span class="v2-timer green">Available Now</span>
+                  <a href="tel:+123456789" class="v2-call-icon"
+                    ><i class="fa-solid fa-phone"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="v2-intake-section">
+          <div class="container v2-flex-container">
+            <div class="v2-form-card">
+              <div class="v2-form-inner">
+                <h3>Patient Portal Inquiry</h3>
+                <p>Submit your details for a priority callback.</p>
+                <form id="v2IntakeForm" class="v2-minimal-form">
+                  <div class="v2-input-wrap">
+                    <input type="text" required placeholder=" " />
+                    <label>Patient Full Name</label>
+                    <span class="v2-focus-border"></span>
+                  </div>
+                  <div class="v2-input-wrap">
+                    <input type="email" required placeholder=" " />
+                    <label>Secure Email Address</label>
+                    <span class="v2-focus-border"></span>
+                  </div>
+                  <div class="v2-input-wrap">
+                    <select>
+                      <option>General Inquiry</option>
+                      <option>Appointment Scheduling</option>
+                      <option>Billing & Insurance</option>
+                    </select>
+                    <span class="v2-focus-border"></span>
+                  </div>
+                  <button type="submit" class="v2-submit-btn">
+                    <span>Initialize Contact</span>
+                    <i class="fa-solid fa-microchip"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="v2-text-content">
+              <div class="v2-pill">24/7 Digital Intake</div>
+              <h2 class="v2-title-large">
+                Experience Seamless <br />
+                <span class="v2-gradient">Medical Communication</span>
+              </h2>
+              <div class="v2-feature-list">
+                <div class="v2-f-item">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <div>
+                    <h4>HIPAA Compliant</h4>
+                    <p>All data is encrypted via 256-bit SSL protocols.</p>
+                  </div>
+                </div>
+                <div class="v2-f-item">
+                  <i class="fa-solid fa-bolt-lightning"></i>
+                  <div>
+                    <h4>Rapid Response</h4>
+                    <p>Average human response time: 14 minutes.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="v2-location-hub">
+          <div class="container">
+            <div class="v2-location-box">
+              <div class="v2-map-side">
+                <img
+                  src="./Assets/contactwaiting_11zon.webp"
+                  alt="Clinic Location"
+                />
+                <div class="v2-map-overlay">
+                  <div class="v2-live-tag">
+                    <span class="v2-dot"></span> LIVE STATUS
+                  </div>
+                </div>
+              </div>
+              <div class="v2-info-side">
+                <h3>Medivox Health Plaza</h3>
+                <p class="v2-address">900 Tech Parkway, Floor 4, North Wing</p>
+                <div class="v2-timetable">
+                  <div class="v2-time-row">
+                    <span>Monday - Friday</span> <span>08:00 - 22:00</span>
+                  </div>
+                  <div class="v2-time-row">
+                    <span>Sat - Sun</span> <span>09:00 - 18:00</span>
+                  </div>
+                </div>
+                <a href="./error2.html" class="v2-direction-btn"
+                  >Navigate to Plaza</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="medical-footer">
+        <div class="footer-grid">
+          <div class="footer-col about-col">
+            <div class="footer logo">
+              <img src="./Assets/logo-stackly.webp" alt="Medical Logo" />
+            </div>
+            <!-- <h3>MediCare<span>+</span></h3> -->
+            <p>
+              Providing trusted and professional healthcare services with modern
+              medical technology and experienced specialists.
+            </p>
+            <div class="social-links">
+              <a href="./error2.html"><i class="fa-brands fa-instagram"></i></a>
+              <a href="./error2.html"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="./error2.html"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="./error2.html"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="./health.html">Health Packages</a></li>
+              <li><a href="./treatments.html">Treatments</a></li>
+              <li><a href="./patient.html">Patient Resources</a></li>
+              <li><a href="./contact2.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <div class="contact-item">
+              <span class="icon">📍</span>
+              <p>Salem, India</p>
+            </div>
+            <div class="contact-item">
+              <span class="icon">📞</span>
+              <p>+91 1234567789</p>
+            </div>
+            <div class="contact-item">
+              <span class="icon">✉</span>
+              <p>support@stackly.com</p>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Subscribe Newsletter</h4>
+            <p>Get latest updates and medical news straight to your inbox.</p>
+            <form id="newsletterForm" class="subscribe-box">
+              <input type="email" placeholder="Enter your email" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 <strong>MediCare+</strong>. All Rights Reserved.</p>
+        </div>
+      </footer>
+
+      <div class="overlay" id="overlay"></div>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: "ease-out-cubic",
+      startEvent: "aos:ready", // manual trigger
+    });
+  </script>
+  <script src="./script.js"></script>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      // 1. Department Cards - Dynamic Flip & Rise
+      gsap.from(".v2-dept-box", {
+        scrollTrigger: {
+          trigger: ".dept-connector",
+          start: "top 70%",
+        },
+        y: 0,
+        opacity: 1,
+        rotateY: 15,
+        stagger: 0.2,
+        duration: 1.2,
+        ease: "expo.out",
+      });
+
+      // 2. Intake Form - Lateral Slide & Scale
+      gsap.from(".v2-form-card", {
+        scrollTrigger: {
+          trigger: ".v2-intake-section",
+          start: "top 70%",
+        },
+        x: -100,
+        opacity: 1,
+        duration: 1.5,
+        ease: "power4.out",
+      });
+
+      gsap.from(".v2-text-content > *", {
+        scrollTrigger: {
+          trigger: ".v2-intake-section",
+          start: "top 70%",
+        },
+        x: 50,
+        opacity: 1,
+        stagger: 0.2,
+        duration: 1,
+        delay: 0.3,
+      });
+
+      // 3. Location Hub - Reveal from Bottom
+      gsap.from(".v2-location-box", {
+        scrollTrigger: {
+          trigger: ".v2-location-hub",
+          start: "top 85%",
+        },
+        y: 100,
+        opacity: 1,
+        duration: 1.5,
+        ease: "power2.out",
+      });
+
+      // 4. Input Focus Animation (Simple GSAP addition to CSS)
+      const inputs = document.querySelectorAll(".v2-input-wrap input");
+      inputs.forEach((input) => {
+        input.addEventListener("focus", () => {
+          gsap.to(input.parentElement.querySelector("label"), {
+            color: "#0ea5e9",
+            duration: 0.3,
+          });
+        });
+        input.addEventListener("blur", () => {
+          if (!input.value) {
+            gsap.to(input.parentElement.querySelector("label"), {
+              color: "#94a3b8",
+              duration: 0.3,
+            });
+          }
+        });
+      });
+    });
+  </script>
+
+  <script>
+    const intakeForm = document.getElementById("v2IntakeForm");
+
+    if (intakeForm) {
+      intakeForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const btn = intakeForm.querySelector(".v2-submit-btn");
+        const btnText = btn.querySelector("span");
+        const btnIcon = btn.querySelector("i");
+
+        // 🔄 Processing State
+        btn.disabled = true;
+        btnText.textContent = "Processing...";
+        btnIcon.className = "fa-solid fa-spinner fa-spin";
+
+        // Optional smooth scale animation (if GSAP exists)
+        if (typeof gsap !== "undefined") {
+          gsap.to(btn, { scale: 0.95, duration: 0.2 });
+        }
+
+        // Simulate delay
+        setTimeout(() => {
+          // ✅ Done State
+          btnText.textContent = "Processing Complete";
+          btnIcon.className = "fa-solid fa-check-circle";
+          btn.style.background = "#10b981";
+
+          if (typeof gsap !== "undefined") {
+            gsap.to(btn, {
+              scale: 1.05,
+              duration: 0.4,
+              ease: "back.out(2)",
+            });
+          }
+
+          // Optional redirect after success
+          // setTimeout(() => {
+          //   window.location.href = "./error.html";
+          // }, 1000);
+        }, 2000);
+      });
+    }
+  </script>
+
+    <script>
+  const newsletterForm = document.getElementById("newsletterForm");
+
+  if (newsletterForm) {
+    newsletterForm.addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent default reload
+
+      // If validation passes → redirect
+      if (newsletterForm.checkValidity()) {
+        window.location.href = "./error2.html";
+      }
+    });
+  }
+</script>
+</html>

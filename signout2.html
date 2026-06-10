@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>Sign Out | Stackly Medical</title>
+    <link rel="icon" href="./Assets/logo-icon.webp" />
+    <link rel="stylesheet" href="./login2.css" />
+    <link rel="stylesheet" href="./layout.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header2">
+        <div class="logo">
+          <a href="./index2.html">
+            <img src="./Assets/logo-stackly.webp" alt="Logo" />
+          </a>
+        </div>
+        <div class="icons">
+          <div class="login">
+            <a href="./signin2.html" aria-label="Sign In">
+              <i class="fa-regular fa-circle-user"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="Structure">
+      <div class="login-wrapper">
+        <div class="login-card">
+          <div class="login-left">
+            <h1>Sign out of <span>Stackly Medical</span></h1>
+            <ul>
+              <li>✔ End your current session safely</li>
+              <li>✔ Protect your medical information</li>
+            </ul>
+          </div>
+          <div class="login-right">
+            <h2>Sign Out</h2>
+            <p>You are about to end your session on this device.</p>
+            <button type="button" class="login-btn1" id="confirmSignOut">
+              Confirm Sign Out
+            </button>
+            <div class="signup">
+              <p><a href="./patient.html">Return to Patient Portal</a></p>
+              <p><a href="./signin2.html">Sign In again</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./auth.js"></script>
+    <script>
+      document.getElementById("confirmSignOut").addEventListener("click", () => {
+        StacklyAuth.signOut();
+        window.location.href = "./signin2.html";
+      });
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>

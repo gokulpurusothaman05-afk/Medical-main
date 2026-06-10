@@ -1,0 +1,886 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <title>Medical</title>
+    <link rel="icon" href="./Assets/logo-icon.webp" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./layout.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Premium Medical Loader -->
+    <div class="medical-loader" id="medicalLoader">
+      <div class="loader-wrapper">
+        <div class="medical-cross">
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="ecg-line">
+          <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+            <path
+              d="M0 50 L70 50 L90 20 L110 80 L130 50 L200 50 L220 30 L240 70 L260 50 L500 50"
+            />
+          </svg>
+        </div>
+
+        <h3 class="loading-text">Preparing Your Care Experience...</h3>
+      </div>
+    </div>
+
+    <div class="the-main">
+      <header>
+        <div class="header1">
+          <div class="container1">
+            <h3>Welcome To Stackly Medical Health-Care Services.</h3>
+          </div>
+          <div class="container2">
+            <div>
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>(123)456-7890</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>Support@stackly.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="header2">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./Assets/logo-stackly.webp" alt="Logo" />
+            </a>
+          </div>
+
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index.html">Home</a>
+
+                <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index2.html">Home 2</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./service.html">Services</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+              <li><a href="./dashboard.html">Dashboard</a></li>
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <a class="btn" href="./app.html">Appointment</a>
+
+              <a href="./signin.html">
+                <i class="fa-regular fa-circle-user"></i>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li
+            class="has-dropdown menu-item"
+            data-aos="fade-up-right"
+            data-aos-delay="100"
+          >
+            <div class="dropdown-header">
+              <a href="./index.html">Home</a>
+              <span class="drop-caret" id="home-caret">▾</span>
+            </div>
+            <ul class="submenu" id="home-dropdown">
+              <li><a href="./index2.html">Home 2</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="150">
+            <a href="./about.html">About</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="200">
+            <a href="./service.html">Services</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="250">
+            <a href="./blog.html">Blog</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="300">
+            <a href="./contact.html">Contact Us</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="350">
+            <a href="./dashboard.html">Dashboard</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="400">
+            <a href="./signin.html">Sign In</a>
+          </li>
+        </ul>
+
+        <div class="sidebar-login">
+          <a href="./app.html">
+            <button class="login-btn">Book an Appointment</button>
+          </a>
+        </div>
+      </div>
+
+      <main>
+        <div class="subheader">
+          <div class="container1">
+            <h3>Welcome To Stackly Medical Health-Care Services.</h3>
+          </div>
+          <div class="container2">
+            <div>
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>(123)456-7890</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>Support@stackly.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero">
+          <div class="hero-content">
+            <h4 data-aos="fade-right" data-aos-delay="100">
+              Medical Professionals
+            </h4>
+            <h2 data-aos="fade-right" data-aos-delay="150">
+              Makes Your Health Better Will Makes Us Better
+            </h2>
+            <p data-aos="fade-right" data-aos-delay="200">
+              This is open to everyone every day and provides primary health
+              care and cutting-edge medicine in a central location.
+            </p>
+
+            <a href="./error.html">
+              <button class="btn1" data-aos="fade-right" data-aos-delay="250">
+                Get Started
+              </button>
+            </a>
+          </div>
+        </div>
+      </main>
+
+      <!-- ================= SECTION 1 : Services ================= -->
+
+      <section class="services-section">
+        <h2 class="section-title">Our <span>Medical Services</span></h2>
+
+        <a href="./error.html">
+          <div class="service-item">
+            <span class="service-num">01</span>
+            <div class="service-text">
+              <h3 class="service-name">Angioplasty</h3>
+              <p class="service-dept">Interventional Cardiology</p>
+              <p class="service-doctor">Lead: Dr. Robert Chen</p>
+            </div>
+            <div class="service-img-container">
+              <img src="./Assets/angioplasty_11zon.webp" alt="Angioplasty" />
+            </div>
+            <div class="arrow">
+              <p><i class="fa-solid fa-arrow-right-long"></i></p>
+            </div>
+          </div>
+        </a>
+
+        <a href="./error.html">
+          <div class="service-item">
+            <span class="service-num">02</span>
+            <div class="service-text">
+              <h3 class="service-name">Cardiology</h3>
+              <p class="service-dept">Heart Care</p>
+              <p class="service-doctor">Lead: Dr. Sarah Jenkins</p>
+            </div>
+            <div class="service-img-container">
+              <img src="./Assets/Cardiology_11zon.webp" alt="Cardiology" />
+            </div>
+            <div class="arrow">
+              <p><i class="fa-solid fa-arrow-right-long"></i></p>
+            </div>
+          </div>
+        </a>
+
+        <a href="./error.html">
+          <div class="service-item">
+            <span class="service-num">03</span>
+            <div class="service-text">
+              <h3 class="service-name">Dental Care</h3>
+              <p class="service-dept">Oral Health</p>
+              <p class="service-doctor">Lead: Dr. Michael Vance</p>
+            </div>
+            <div class="service-img-container">
+              <img src="./Assets/Dental care_11zon.webp" alt="Dental Care" />
+            </div>
+            <div class="arrow">
+              <p><i class="fa-solid fa-arrow-right-long"></i></p>
+            </div>
+          </div>
+        </a>
+
+        <a href="./error.html">
+          <div class="service-item">
+            <span class="service-num">04</span>
+            <div class="service-text">
+              <h3 class="service-name">Eye Care</h3>
+              <p class="service-dept">Ophthalmology</p>
+              <p class="service-doctor">Lead: Dr. Elena Rodriguez</p>
+            </div>
+            <div class="service-img-container">
+              <img src="./Assets/eyecare_11zon.webp" alt="Eye Care" />
+            </div>
+            <div class="arrow">
+              <p><i class="fa-solid fa-arrow-right-long"></i></p>
+            </div>
+          </div>
+        </a>
+
+        <a href="./error.html">
+          <div class="service-item">
+            <span class="service-num">05</span>
+            <div class="service-text">
+              <h3 class="service-name">Endocrinology</h3>
+              <p class="service-dept">Hormonal Care</p>
+              <p class="service-doctor">Lead: Dr. James Wilson</p>
+            </div>
+            <div class="service-img-container">
+              <img
+                src="./Assets/endocrinology_11zon.webp"
+                alt="Endocrinology"
+              />
+            </div>
+            <div class="arrow">
+              <p><i class="fa-solid fa-arrow-right-long"></i></p>
+            </div>
+          </div>
+        </a>
+
+        <a href="./error.html">
+          <div class="service-item">
+            <span class="service-num">06</span>
+            <div class="service-text">
+              <h3 class="service-name">Orthopaedics</h3>
+              <p class="service-dept">Bone & Joint Care</p>
+              <p class="service-doctor">Lead: Dr. David Miller</p>
+            </div>
+            <div class="service-img-container">
+              <img src="./Assets/Orthopaedics_11zon.webp" alt="Orthopaedics" />
+            </div>
+            <div class="arrow">
+              <p><i class="fa-solid fa-arrow-right-long"></i></p>
+            </div>
+          </div>
+        </a>
+      </section>
+
+      <!-- ================= SECTION 2 : About ================= -->
+
+      <section class="about">
+        <div class="container about-grid">
+          <div class="about-img"></div>
+
+          <div class="about-content">
+            <span class="section-tag">ABOUT US</span>
+            <h2>
+              The Heart And Science Of <br />
+              Medicate Test
+            </h2>
+            <p>
+              We thoroughly evaluate & treat all of the contributing root
+              factors related to your issue. This includes your work and home
+              stressors.
+            </p>
+
+            <div class="about-features">
+              <div class="feature">
+                <span>✔</span>
+                <p>Multi Specialty Pharma Treatment</p>
+              </div>
+
+              <div class="feature">
+                <span>✔</span>
+                <p>24 Hours Medical Service</p>
+              </div>
+            </div>
+
+            <a href="./error.html">
+              <button class="primary-btn">More About Us</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SECTION 3 : SPECIAL CARE ================= -->
+
+      <section class="special-care">
+        <div class="container special-wrapper">
+          <div class="special-left" id="special-content">
+            <span class="tag animate-item">SPECIAL CARE</span>
+            <h2 class="animate-item">
+              We provide the best care for your health with world-class
+              specialists
+            </h2>
+
+            <p class="animate-item">
+              Our medical center is home to a diverse pool of healthcare
+              professionals dedicated to your recovery. We combine advanced
+              technology with deep clinical expertise to ensure every patient
+              receives a personalized treatment plan that works.
+            </p>
+
+            <div class="extra-info animate-item">
+              <div class="info-block">
+                <strong>Personalized Plans</strong>
+                <p>
+                  Tailored medical approaches based on your unique genetic
+                  profile and lifestyle.
+                </p>
+              </div>
+              <div class="info-block">
+                <strong>24/7 Monitoring</strong>
+                <p>
+                  Continuous care through our advanced digital health tracking
+                  systems.
+                </p>
+              </div>
+            </div>
+
+            <ul class="features animate-item">
+              <li>
+                <span class="tick-circle"></span> 20+ years of medical
+                excellence
+              </li>
+              <li>
+                <span class="tick-circle"></span> Professional Experts in all
+                fields
+              </li>
+              <li>
+                <span class="tick-circle"></span> Award-winning cardiac surgery
+                team
+              </li>
+              <li>
+                <span class="tick-circle"></span> Global standards in patient
+                safety
+              </li>
+            </ul>
+
+            <button class="btn-primary animate-item">
+              Discover More Services
+            </button>
+          </div>
+
+          <div class="special-right">
+            <div class="image-stack" id="special-image">
+              <div class="blob-bg"></div>
+
+              <img
+                src="./Assets/specialcare_11zon_11zon.webp"
+                alt="Medical Specialist"
+                class="main-img"
+              />
+
+              <div class="doctor-card">
+                <h4>Dr. Robert Davis</h4>
+                <p>Cardiology Specialist</p>
+                <div class="card-badge">Top Rated</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SECTION 4 : Our Team ================= -->
+
+      <section class="team-section" id="medical-team">
+        <div class="container">
+          <div class="section-header">
+            <span class="sub-tag">EXPERT SPECIALISTS</span>
+            <h2>Meet Our Dedicated Doctors</h2>
+            <p>
+              Our team consists of world-class medical professionals committed
+              to providing the highest quality healthcare services.
+            </p>
+          </div>
+
+          <div class="team-grid">
+            <div class="team-card animate-team">
+              <div class="team-img">
+                <img src="./Assets/team1_11zon.webp" alt="Dr. James Wilson" />
+                <div class="social-overlay">
+                  <a href="./error.html"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="./error.html"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a href="./error.html"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                  <a href="./error.html"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="team-info">
+                <h4>Dr. James Wilson</h4>
+                <p>Chief Cardiologist</p>
+                <div class="team-badge">15+ Yrs Exp</div>
+              </div>
+            </div>
+
+            <div class="team-card animate-team">
+              <div class="team-img">
+                <img src="./Assets/team2_11zon.webp" alt="Dr. Sarah Jenkins" />
+                <div class="social-overlay">
+                  <a href="./error.html"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="./error.html"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a href="./error.html"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                  <a href="./error.html"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="team-info">
+                <h4>Dr. Sarah Jenkins</h4>
+                <p>Pediatric Specialist</p>
+                <div class="team-badge">10+ Yrs Exp</div>
+              </div>
+            </div>
+
+            <div class="team-card animate-team">
+              <div class="team-img">
+                <img src="./Assets/team3_11zon.webp" alt="Dr. Michael Chen" />
+                <div class="social-overlay">
+                  <a href="./error.html"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="./error.html"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a href="./error.html"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                  <a href="./error.html"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="team-info">
+                <h4>Dr. Michael Chen</h4>
+                <p>Neurologist</p>
+                <div class="team-badge">12+ Yrs Exp</div>
+              </div>
+            </div>
+
+            <div class="team-card animate-team">
+              <div class="team-img">
+                <img src="./Assets/team4_11zon.webp" alt="Dr. Emily Adams" />
+                <div class="social-overlay">
+                  <a href="./error.html"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="./error.html"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a href="./error.html"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                  <a href="./error.html"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="team-info">
+                <h4>Dr. Emily Adams</h4>
+                <p>Dental Surgeon</p>
+                <div class="team-badge">8+ Yrs Exp</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SECTION 5 : Medical-News ================= -->
+
+      <section class="blog-section" id="medical-blog">
+        <div class="container">
+          <div class="section-header" data-aos="fade-up">
+            <p class="tagline">HEALTH INSIGHTS & UPDATES</p>
+            <h2>Latest Medical News & Research</h2>
+            <p class="desc">
+              Explore the latest breakthroughs in clinical research, modern
+              surgical techniques, and wellness strategies from our expert
+              medical team.
+            </p>
+          </div>
+
+          <div class="blog-grid" id="blogGrid">
+            <div class="blog-card" data-aos="fade-up">
+              <div class="blog-img">
+                <img
+                  src="./Assets/Cardiology_11zon.webp"
+                  alt="Cardiology News"
+                />
+              </div>
+              <div class="blog-content">
+                <span class="blog-tag">Cardiology</span>
+                <span class="blog-date">12 Feb 2026</span>
+                <h3>Advanced Heart Surgery Success</h3>
+                <p>
+                  Our cardiology team successfully completed a complex heart
+                  surgery using advanced minimally invasive techniques.
+                </p>
+                <a href="./error.html" class="read-more">Read Full Case →</a>
+              </div>
+            </div>
+
+            <div class="blog-card" data-aos="fade-up">
+              <div class="blog-img">
+                <img src="./Assets/Dental care_11zon.webp" alt="Dental Tech" />
+              </div>
+              <div class="blog-content">
+                <span class="blog-tag">Dental Care</span>
+                <span class="blog-date">08 Feb 2026</span>
+                <h3>New Laser Dental Technology</h3>
+                <p>
+                  We have introduced modern laser-based equipment for painless
+                  and faster treatments for all our patients.
+                </p>
+                <a href="./error.html" class="read-more">Learn About Tech →</a>
+              </div>
+            </div>
+
+            <div class="blog-card" data-aos="fade-up">
+              <div class="blog-img">
+                <img
+                  src="./Assets/diabetes care_11zon_11zon.webp"
+                  alt="Diabetes Screening"
+                />
+              </div>
+              <div class="blog-content">
+                <span class="blog-tag">Endocrinology</span>
+                <span class="blog-date">02 Feb 2026</span>
+                <h3>Free Diabetes Screening Camp</h3>
+                <p>
+                  Join our free diabetes awareness and screening camp organized
+                  by our endocrinology department this weekend.
+                </p>
+                <a href="./error.html" class="read-more">Register Now →</a>
+              </div>
+            </div>
+
+            <div id="extraBlogs" class="extra-blogs-wrapper"></div>
+          </div>
+
+          <div class="blog-cta" data-aos="fade-up">
+            <button
+              class="btn toggle-btn"
+              id="toggleBtn"
+              onclick="handleToggleBlogs()"
+            >
+              Show More Insights ↓
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SECTION 6 : Testimonial-Section ================= -->
+
+      <section class="testimonial-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="sub-tag">PATIENT STORIES</span>
+            <h2>What Our Patients Say</h2>
+            <p>
+              Trusted care. Real experiences. Genuine recovery stories from our
+              community.
+            </p>
+          </div>
+
+          <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-card">
+                  <div class="card-top">
+                    <div class="quote-icon">“</div>
+                    <div class="rating">★★★★★</div>
+                  </div>
+                  <p class="message">
+                    The cardiology department saved my life. The doctors were
+                    extremely professional and supportive throughout my surgery.
+                    The follow-up care was exceptional.
+                  </p>
+                  <div class="patient-info">
+                    <div class="img-wrapper">
+                      <img src="./Assets/testi1_11zon.webp" alt="Patient" />
+                      <span class="verified-check">✓</span>
+                    </div>
+                    <div>
+                      <h4>Rajesh Kumar</h4>
+                      <span>Cardiology Patient</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-card">
+                  <div class="card-top">
+                    <div class="quote-icon">“</div>
+                    <div class="rating">★★★★★</div>
+                  </div>
+                  <p class="message">
+                    My dental procedure was completely painless. The staff made
+                    me feel comfortable. Highly recommended for anyone with
+                    dental anxiety!
+                  </p>
+                  <div class="patient-info">
+                    <div class="img-wrapper">
+                      <img src="./Assets/testi2_11zon.webp" alt="Patient" />
+                      <span class="verified-check">✓</span>
+                    </div>
+                    <div>
+                      <h4>Anita Sharma</h4>
+                      <span>Dental Care</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-card">
+                  <div class="card-top">
+                    <div class="quote-icon">“</div>
+                    <div class="rating">★★★★★</div>
+                  </div>
+                  <p class="message">
+                    The emergency team responded immediately when my father
+                    collapsed. We are forever grateful for their dedication and
+                    quick thinking. Truly world-class.
+                  </p>
+                  <div class="patient-info">
+                    <div class="img-wrapper">
+                      <img src="./Assets/testi3_11zon.webp" alt="Patient" />
+                      <span class="verified-check">✓</span>
+                    </div>
+                    <div>
+                      <h4>Mohammed Ali</h4>
+                      <span>Emergency Care</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-card">
+                  <div class="card-top">
+                    <div class="quote-icon">“</div>
+                    <div class="rating">★★★★★</div>
+                  </div>
+                  <p class="message">
+                    Excellent eye care services. My laser surgery was successful
+                    and my vision improved dramatically. I can see the world
+                    clearly now!
+                  </p>
+                  <div class="patient-info">
+                    <div class="img-wrapper">
+                      <img src="./Assets/testi4_11zon.webp" alt="Patient" />
+                      <span class="verified-check">✓</span>
+                    </div>
+                    <div>
+                      <h4>Priya Nair</h4>
+                      <span>Eye Care</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-card">
+                  <div class="card-top">
+                    <div class="quote-icon">“</div>
+                    <div class="rating">★★★★★</div>
+                  </div>
+                  <p class="message">
+                    The physiotherapy sessions helped me recover from my sports
+                    injury much faster than expected. Very knowledgeable and
+                    friendly therapists.
+                  </p>
+                  <div class="patient-info">
+                    <div class="img-wrapper">
+                      <img src="./Assets/testi5_11zon.webp" alt="Patient" />
+                      <span class="verified-check">✓</span>
+                    </div>
+                    <div>
+                      <h4>Suresh Iyer</h4>
+                      <span>Sports Medicine</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-card">
+                  <div class="card-top">
+                    <div class="quote-icon">“</div>
+                    <div class="rating">★★★★★</div>
+                  </div>
+                  <p class="message">
+                    As a first-time mother, the maternity staff was incredible.
+                    They gave me the confidence and support I needed during my
+                    stay. Thank you!
+                  </p>
+                  <div class="patient-info">
+                    <div class="img-wrapper">
+                      <img src="./Assets/testi6_11zon.webp" alt="Patient" />
+                      <span class="verified-check">✓</span>
+                    </div>
+                    <div>
+                      <h4>Meena Patel</h4>
+                      <span>Maternity Care</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SECTION 7 : Medical-footer ================= -->
+
+      <footer class="medical-footer">
+        <div class="footer-grid">
+          <div class="footer-col about-col">
+            <div class="footer logo">
+              <img src="./Assets/logo-stackly.webp" alt="Medical Logo" />
+            </div>
+            <!-- <h3>MediCare<span>+</span></h3> -->
+            <p>
+              Providing trusted and professional healthcare services with modern
+              medical technology and experienced specialists.
+            </p>
+            <div class="social-links">
+              <a href="./error.html"><i class="fa-brands fa-instagram"></i></a>
+              <a href="./error.html"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="./error.html"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="./error.html"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./service.html">Our Services</a></li>
+              <li><a href="./app.html">Appointments</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <div class="contact-item">
+              <span class="icon">📍</span>
+              <p>Salem, India</p>
+            </div>
+            <div class="contact-item">
+              <span class="icon">📞</span>
+              <p>+91 1234567789</p>
+            </div>
+            <div class="contact-item">
+              <span class="icon">✉</span>
+              <p>support@stackly.com</p>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Subscribe Newsletter</h4>
+            <p>Get latest updates and medical news straight to your inbox.</p>
+            <form id="newsletterForm" class="subscribe-box">
+              <input type="email" placeholder="Enter your email" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 <strong>MediCare+</strong>. All Rights Reserved.</p>
+        </div>
+      </footer>
+
+      <div class="overlay" id="overlay"></div>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: "ease-out-cubic",
+      startEvent: "aos:ready", // manual trigger
+    });
+  </script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <script src="./script.js"></script>
+  <script src="./gsap.js"></script>
+  <script src="./swiper.js"></script>
+  <script src="./blog.js"></script>
+  <script>
+    const newsletterForm = document.getElementById("newsletterForm");
+
+    if (newsletterForm) {
+      newsletterForm.addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent default reload
+
+        // If validation passes → redirect
+        if (newsletterForm.checkValidity()) {
+          window.location.href = "./error.html";
+        }
+      });
+    }
+  </script>
+</html>

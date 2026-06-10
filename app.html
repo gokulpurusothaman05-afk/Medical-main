@@ -1,0 +1,819 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <title>Medical</title>
+    <link rel="icon" href="./Assets/logo-icon.webp" />
+    <link rel="stylesheet" href="./app.css" />
+    <link rel="stylesheet" href="./layout.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Premium Medical Loader -->
+    <div class="medical-loader" id="medicalLoader">
+      <div class="loader-wrapper">
+        <div class="medical-cross">
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="ecg-line">
+          <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+            <path
+              d="M0 50 L70 50 L90 20 L110 80 L130 50 L200 50 L220 30 L240 70 L260 50 L500 50"
+            />
+          </svg>
+        </div>
+
+        <h3 class="loading-text">Preparing Your Care Experience...</h3>
+      </div>
+    </div>
+
+    <div class="the-main">
+      <header>
+        <div class="header1">
+          <div class="container1">
+            <h3>Welcome To Stackly Medical Health-Care Services.</h3>
+          </div>
+          <div class="container2">
+            <div>
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>(123)456-7890</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>Support@stackly.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="header2">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./Assets/logo-stackly.webp" alt="Logo" />
+            </a>
+          </div>
+
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index.html">Home</a>
+
+                <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index2.html">Home 2</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./service.html">Services</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+              <li><a href="./dashboard.html">Dashboard</a></li>
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <a class="btn" href="./app.html">Appointment</a>
+
+              <a href="./signin.html">
+                <i class="fa-regular fa-circle-user"></i>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li
+            class="has-dropdown menu-item"
+            data-aos="fade-up-right"
+            data-aos-delay="100"
+          >
+            <div class="dropdown-header">
+              <a href="./index.html">Home</a>
+              <span class="drop-caret" id="home-caret">▾</span>
+            </div>
+            <ul class="submenu" id="home-dropdown">
+              <li><a href="./index2.html">Home 2</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="150">
+            <a href="./about.html">About</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="200">
+            <a href="./service.html">Services</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="250">
+            <a href="./blog.html">Blog</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="300">
+            <a href="./contact.html">Contact Us</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="350">
+            <a href="./dashboard.html">Dashboard</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="400">
+            <a href="./signin.html">Sign In</a>
+          </li>
+        </ul>
+
+        <div class="sidebar-login">
+          <a href="./app.html">
+            <button class="login-btn">Book an Appointment</button>
+          </a>
+        </div>
+      </div>
+
+      <main></main>
+
+      <section class="Appointment-v2">
+        <div class="container">
+          <div class="booking-grid">
+            <div class="booking-sidebar">
+              <div class="step-indicator">
+                <span class="step-pill active" data-step="1">01. Service</span>
+                <span class="step-pill" data-step="2">02. Time</span>
+                <span class="step-pill" data-step="3">03. Confirm</span>
+              </div>
+
+              <h2 class="sidebar-title">
+                Secure Your <span class="v2-gradient">Consultation</span>
+              </h2>
+              <p class="sidebar-desc">
+                Our intelligent booking system ensures you're matched with the
+                right specialist at the right time.
+              </p>
+
+              <div class="urgent-booking-badge">
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <div>
+                  <strong>Instant Processing</strong>
+                  <p>Average confirmation: < 2 mins</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="booking-main">
+              <form id="appointmentFormV2">
+                <div class="booking-step active" id="step1">
+                  <h3 class="step-title">Select Department & Specialist</h3>
+                  <div class="selector-stack">
+                    <div class="v2-select-box">
+                      <label
+                        ><i class="fa-solid fa-stethoscope"></i> Clinical
+                        Department</label
+                      >
+                      <select id="deptSelect" required>
+                        <option value="" disabled selected>
+                          Choose Department
+                        </option>
+                        <option>Cardiology Specialists</option>
+                        <option>Neurology & Spine</option>
+                        <option>General Pediatrics</option>
+                      </select>
+                    </div>
+                    <div class="v2-select-box">
+                      <label
+                        ><i class="fa-solid fa-user-doctor"></i> Available
+                        Specialists</label
+                      >
+                      <select id="doctorSelect" required>
+                        <option value="" disabled selected>
+                          Choose Doctor
+                        </option>
+                        <option>Dr. Sarah Jenkins (Senior)</option>
+                        <option>Dr. Robert Chen (Consultant)</option>
+                      </select>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="next-step-btn"
+                    onclick="goToStep(2)"
+                  >
+                    Next: Choose Time <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+
+                <div class="booking-step" id="step2">
+                  <h3 class="step-title">
+                    Availability for
+                    <span id="displayMonth">February 2026</span>
+                  </h3>
+                  <div class="calendar-mimic">
+                    <div class="calendar-day" data-date="24">
+                      <span>Mon</span><strong>24</strong>
+                    </div>
+                    <div class="calendar-day active" data-date="25">
+                      <span>Tue</span><strong>25</strong>
+                    </div>
+                    <div class="calendar-day" data-date="26">
+                      <span>Wed</span><strong>26</strong>
+                    </div>
+                    <div class="calendar-day" data-date="27">
+                      <span>Thu</span><strong>27</strong>
+                    </div>
+                    <div class="calendar-day" data-date="28">
+                      <span>Fri</span><strong>28</strong>
+                    </div>
+                  </div>
+
+                  <div class="time-slots-grid">
+                    <div class="slot">09:00 AM</div>
+                    <div class="slot">10:30 AM</div>
+                    <div class="slot active">02:00 PM</div>
+                    <div class="slot">03:30 PM</div>
+                    <div class="slot disabled">05:00 PM</div>
+                  </div>
+                  <div class="step-actions">
+                    <button
+                      type="button"
+                      class="next-step-btn"
+                      onclick="goToStep(3)"
+                    >
+                      Next: Finalize <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="back-btn"
+                      onclick="goToStep(1)"
+                    >
+                      Back
+                    </button>
+                  </div>
+                </div>
+
+                <div class="booking-step" id="step3">
+                  <h3 class="step-title">Patient Identification</h3>
+                  <div class="patient-details-row">
+                    <div class="v2-input-box">
+                      <input
+                        type="text"
+                        id="pName"
+                        placeholder="Full Patient Name"
+                        required
+                      />
+                    </div>
+                    <div class="v2-input-box">
+                      <input
+                        type="tel"
+                        id="pPhone"
+                        placeholder="Contact Number"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="v2-input-box">
+                    <textarea
+                      placeholder="Reason for visit (Optional)"
+                      rows="3"
+                    ></textarea>
+                  </div>
+
+                  <div class="step-actions">
+                    <button type="submit" id="finish" class="confirm-btn">
+                      <span>Initialize Booking</span>
+                      <i class="fa-solid fa-calendar-check"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="back-btn"
+                      onclick="goToStep(2)"
+                    >
+                      Back
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="appointment-v2-section">
+        <div class="container">
+          <div class="booking-grid">
+            <div class="booking-main">
+              <form id="appointmentFormV2">
+                <h3 class="step-title">🧑 Personal Information</h3>
+                <div class="patient-details-row">
+                  <div class="v2-input-box">
+                    <input
+                      type="text"
+                      id="pName"
+                      placeholder="Full Name"
+                      required
+                    />
+                  </div>
+                  <div class="v2-input-box">
+                    <input
+                      type="tel"
+                      id="pPhone"
+                      placeholder="Phone Number"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="patient-details-row">
+                  <div class="v2-input-box">
+                    <input
+                      type="email"
+                      id="pEmail"
+                      placeholder="Email Address"
+                      required
+                    />
+                  </div>
+                  <div class="v2-input-box">
+                    <input
+                      type="text"
+                      placeholder="Date of Birth (Optional)"
+                      onfocus="this.type = 'date'"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <h3 class="step-title">🏥 Medical Details</h3>
+                <div class="selector-stack">
+                  <div class="v2-select-box">
+                    <label>Select Department</label>
+                    <select id="deptSelect" required>
+                      <option value="" disabled selected>
+                        Choose Department
+                      </option>
+                      <option>Cardiology</option>
+                      <option>Neurology</option>
+                      <option>Orthopedics</option>
+                      <option>Pediatrics</option>
+                      <option>General Medicine</option>
+                    </select>
+                  </div>
+                  <div class="v2-select-box">
+                    <label>Select Doctor (Optional)</label>
+                    <select id="doctorSelect">
+                      <option value="" selected>Choose Doctor</option>
+                      <option>Dr. Sarah Jenkins</option>
+                      <option>Dr. Robert Chen</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="patient-details-row">
+                  <div class="v2-input-box">
+                    <label class="input-label">Preferred Date</label>
+                    <input type="date" required />
+                  </div>
+                  <div class="v2-input-box">
+                    <label class="input-label">Preferred Time</label>
+                    <select required>
+                      <option value="09:00">09:00 AM</option>
+                      <option value="11:00">11:00 AM</option>
+                      <option value="14:00">02:00 PM</option>
+                      <option value="16:00">04:00 PM</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="v2-select-box">
+                  <label>Type of Visit</label>
+                  <div class="radio-group">
+                    <label
+                      ><input
+                        type="radio"
+                        name="visitType"
+                        value="new"
+                        checked
+                      />
+                      New Patient</label
+                    >
+                    <label
+                      ><input type="radio" name="visitType" value="follow" />
+                      Follow-up</label
+                    >
+                    <label
+                      ><input type="radio" name="visitType" value="emergency" />
+                      Emergency</label
+                    >
+                  </div>
+                </div>
+
+                <h3 class="step-title">📝 Additional Info</h3>
+                <div class="v2-input-box">
+                  <textarea
+                    placeholder="Symptoms / Message"
+                    rows="3"
+                  ></textarea>
+                </div>
+
+                <button type="submit" id="finish" class="confirm-btn">
+                  <span>Book Appointment</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </form>
+            </div>
+
+            <div class="booking-sidebar">
+              <div class="sidebar-info-card">
+                <h2 class="sidebar-title">
+                  🏥 Medical <span class="v2-gradient">Center</span>
+                </h2>
+
+                <div class="info-item">
+                  <i class="fa-solid fa-clock"></i>
+                  <div>
+                    <strong>🕒 Working Hours</strong>
+                    <p>Mon – Sat: 8:00 AM – 8:00 PM</p>
+                    <p class="emergency-text">Emergency: 24/7</p>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  <div>
+                    <strong>📞 Emergency Contact</strong>
+                    <p>+91 XXXXX XXXXX</p>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <div>
+                    <strong>📍 Hospital Location</strong>
+                    <p>
+                      123 Health Street, Medical District<br />New Delhi, India
+                    </p>
+                  </div>
+                </div>
+
+                <div class="urgent-booking-badge">
+                  <i class="fa-solid fa-bolt-lightning"></i>
+                  <div>
+                    <strong>Instant Processing</strong>
+                    <p>Direct sync with doctor schedule</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="medical-footer">
+        <div class="footer-grid">
+          <div class="footer-col about-col">
+            <div class="footer logo">
+              <img src="./Assets/logo-stackly.webp" alt="Medical Logo" />
+            </div>
+            <!-- <h3>MediCare<span>+</span></h3> -->
+            <p>
+              Providing trusted and professional healthcare services with modern
+              medical technology and experienced specialists.
+            </p>
+            <div class="social-links">
+              <a href="./error.html"><i class="fa-brands fa-instagram"></i></a>
+              <a href="./error.html"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="./error.html"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="./error.html"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./service.html">Our Services</a></li>
+              <li><a href="./app.html">Appointments</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <div class="contact-item">
+              <span class="icon">📍</span>
+              <p>Salem, India</p>
+            </div>
+            <div class="contact-item">
+              <span class="icon">📞</span>
+              <p>+91 1234567789</p>
+            </div>
+            <div class="contact-item">
+              <span class="icon">✉</span>
+              <p>support@stackly.com</p>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Subscribe Newsletter</h4>
+            <p>Get latest updates and medical news straight to your inbox.</p>
+            <form id="newsletterForm" class="subscribe-box">
+              <input type="email" placeholder="Enter your email" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 <strong>MediCare+</strong>. All Rights Reserved.</p>
+        </div>
+      </footer>
+
+      <div class="overlay" id="overlay"></div>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: "ease-out-cubic",
+      startEvent: "aos:ready", // manual trigger
+    });
+  </script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <script src="./script.js"></script>
+  <script src="./gsap.js"></script>
+  <script src="./swiper.js"></script>
+  <script src="./blog.js"></script>
+
+  <!-- hero -->
+
+  <script>
+    // 1. Function to switch between steps
+    function goToStep(stepNumber) {
+      const allSteps = document.querySelectorAll(".booking-step");
+      const targetStep = document.getElementById(`step${stepNumber}`);
+      const pills = document.querySelectorAll(".step-pill");
+
+      // Update Sidebar Navigation UI
+      pills.forEach((pill) => {
+        pill.classList.remove("active");
+        if (pill.getAttribute("data-step") == stepNumber) {
+          pill.classList.add("active");
+        }
+      });
+
+      // Hide all steps and show the targeted one
+      allSteps.forEach((step) => {
+        step.classList.remove("active");
+      });
+
+      if (targetStep) {
+        targetStep.classList.add("active");
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // 2. Calendar Selection Logic
+      const days = document.querySelectorAll(".calendar-day");
+      days.forEach((day) => {
+        day.addEventListener("click", () => {
+          days.forEach((d) => d.classList.remove("active"));
+          day.classList.add("active");
+        });
+      });
+
+      // 3. Time Slot Selection Logic
+      const slots = document.querySelectorAll(".slot:not(.disabled)");
+      slots.forEach((slot) => {
+        slot.addEventListener("click", () => {
+          slots.forEach((s) => s.classList.remove("active"));
+          slot.classList.add("active");
+        });
+      });
+
+      // 4. Handle Final Submission & Alert
+      const bookingForm = document.getElementById("appointmentFormV2");
+
+      if (bookingForm) {
+        bookingForm.addEventListener("submit", function (e) {
+          // STOP the form from reloading the page
+          e.preventDefault();
+
+          const btn = document.getElementById("finish");
+          const btnText = btn.querySelector("span");
+          const btnIcon = btn.querySelector("i");
+
+          // Visual loading state
+          btn.disabled = true;
+          btn.style.opacity = "0.8";
+          btnText.textContent = "Processing...";
+          if (btnIcon) btnIcon.className = "fa-solid fa-spinner fa-spin";
+
+          // Small delay to simulate a real booking process
+          setTimeout(() => {
+            // Success styling
+            btn.style.backgroundColor = "./error.html10b981"; // Success Green
+            btnText.textContent = "Booking Confirmed!";
+            if (btnIcon) btnIcon.className = "fa-solid fa-check";
+
+            // THE ALERT MESSAGE
+            alert("Your appointment has been booked!");
+
+            // Optional: Reset button after alert is closed
+            btn.disabled = false;
+            btn.style.opacity = "1";
+          }, 1000);
+        });
+      }
+    });
+  </script>
+  <!-- 2 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // 1. Entrance Animations
+      gsap.from(".booking-main", {
+        opacity: 0,
+        x: -50,
+        duration: 1,
+        ease: "power3.out",
+      });
+      gsap.from(".booking-sidebar", {
+        opacity: 0,
+        x: 50,
+        duration: 1,
+        ease: "power3.out",
+        delay: 0.2,
+      });
+      gsap.from(".info-item", {
+        opacity: 0,
+        y: 20,
+        stagger: 0.2,
+        duration: 0.8,
+        delay: 0.5,
+      });
+
+      // 2. Handle Form Submission
+      // Select ALL forms with same ID
+      const forms = document.querySelectorAll("#appointmentFormV2");
+
+      forms.forEach((form) => {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Get the submit button inside THIS form only
+          const btn = form.querySelector("#finish");
+          const btnText = btn.querySelector("span");
+          const btnIcon = btn.querySelector("i");
+
+          // Loading State
+          btn.style.pointerEvents = "none";
+          btnText.textContent = "Processing Appointment...";
+          btnIcon.className = "fa-solid fa-spinner fa-spin";
+
+          if (typeof gsap !== "undefined") {
+            gsap.to(btn, { scale: 0.95, duration: 0.2 });
+          }
+
+          setTimeout(() => {
+            // Success State
+            btn.style.background = "#10b981";
+            btnText.textContent = "Booked Successfully!";
+            btnIcon.className = "fa-solid fa-check-double";
+
+            if (typeof gsap !== "undefined") {
+              gsap.to(btn, {
+                scale: 1.05,
+                duration: 0.4,
+                ease: "back.out(2)",
+              });
+
+              gsap.to(".booking-main", {
+                backgroundColor: "#f0fdf4",
+                duration: 0.5,
+              });
+            }
+
+            // Redirect to 404 page
+            // setTimeout(() => {
+            //   window.location.href = "./error.html";
+            // }, 800);
+          }, 2000);
+        });
+      });
+    });
+  </script>
+
+  <script>
+    const newsletterForm = document.getElementById("newsletterForm");
+
+    if (newsletterForm) {
+      newsletterForm.addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent default reload
+
+        // If validation passes → redirect
+        if (newsletterForm.checkValidity()) {
+          window.location.href = "./error.html";
+        }
+      });
+    }
+  </script>
+
+  <script>
+    function goToStep(step) {
+      // STEP 1 VALIDATION
+      if (step === 2) {
+        const dept = document.getElementById("deptSelect");
+        const doctor = document.getElementById("doctorSelect");
+
+        if (!dept.value) {
+          dept.reportValidity();
+          return;
+        }
+
+        if (!doctor.value) {
+          doctor.reportValidity();
+          return;
+        }
+      }
+
+      // STEP 2 VALIDATION
+      if (step === 3) {
+        const activeDate = document.querySelector(".calendar-day.active");
+        const activeSlot = document.querySelector(".slot.active");
+
+        if (!activeDate) {
+          alert("Please select a date.");
+          return;
+        }
+
+        if (!activeSlot) {
+          alert("Please select a time slot.");
+          return;
+        }
+      }
+
+      // -------------------------
+      // STEP SWITCHING
+      // -------------------------
+
+      // Hide all steps
+      document.querySelectorAll(".booking-step").forEach((el) => {
+        el.classList.remove("active");
+      });
+
+      // Show selected step
+      const targetStep = document.getElementById("step" + step);
+      if (targetStep) {
+        targetStep.classList.add("active");
+      }
+
+      // -------------------------
+      // UPDATE SIDEBAR PILLS
+      // -------------------------
+      document.querySelectorAll(".step-pill").forEach((pill) => {
+        pill.classList.remove("active");
+
+        if (parseInt(pill.getAttribute("data-step")) === step) {
+          pill.classList.add("active");
+        }
+      });
+    }
+  </script>
+
+  <!-- <script>
+    //   const appointmentForm = document.getElementById("appointmentFormV2");
+
+    //   appointmentForm.addEventListener("submit", function (e) {
+    //     e.preventDefault(); // Stop normal form submission
+    //     window.location.href = "./error.html"; // Redirect
+    //   });
+    //
+  </script> -->
+</html>

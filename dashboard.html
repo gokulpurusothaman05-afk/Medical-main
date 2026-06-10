@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <title>Medical</title>
+    <link rel="icon" href="./Assets/logo-icon.webp" />
+    <link rel="stylesheet" href="./dashboard.css" />
+    <link rel="stylesheet" href="./layout.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Premium Medical Loader -->
+    <div class="medical-loader" id="medicalLoader">
+      <div class="loader-wrapper">
+        <div class="medical-cross">
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="ecg-line">
+          <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+            <path
+              d="M0 50 L70 50 L90 20 L110 80 L130 50 L200 50 L220 30 L240 70 L260 50 L500 50"
+            />
+          </svg>
+        </div>
+
+        <h3 class="loading-text">Preparing Your Care Experience...</h3>
+      </div>
+    </div>
+
+    <div class="the-main">
+      <header>
+        <div class="header1">
+          <div class="container1">
+            <h3>Welcome To Stackly Medical Health-Care Services.</h3>
+          </div>
+          <div class="container2">
+            <div>
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>(123)456-7890</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>Support@stackly.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="header2">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./Assets/logo-stackly.webp" alt="Logo" />
+            </a>
+          </div>
+
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index.html">Home</a>
+
+                <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index2.html">Home 2</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./service.html">Services</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+              <li><a href="./dashboard.html">Dashboard</a></li>
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <a class="btn" href="./app.html">Appointment</a>
+
+              <a href="./signin.html">
+                <i class="fa-regular fa-circle-user"></i>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li
+            class="has-dropdown menu-item"
+            data-aos="fade-up-right"
+            data-aos-delay="100"
+          >
+            <div class="dropdown-header">
+              <a href="./index.html">Home</a>
+              <span class="drop-caret" id="home-caret">▾</span>
+            </div>
+            <ul class="submenu" id="home-dropdown">
+              <li><a href="./index2.html">Home 2</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="150">
+            <a href="./about.html">About</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="200">
+            <a href="./service.html">Services</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="250">
+            <a href="./blog.html">Blog</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="300">
+            <a href="./contact.html">Contact Us</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="350">
+            <a href="./dashboard.html">Dashboard</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="400">
+            <a href="./signin.html">Sign In</a>
+          </li>
+        </ul>
+
+        <div class="sidebar-login">
+          <a href="./app.html">
+            <button class="login-btn">Book an Appointment</button>
+          </a>
+        </div>
+      </div>
+      <main></main>
+      <section class="dashboard-wrapper">
+        <div class="header-box">
+          <h1>Medical <span class="highlight">Command Center</span></h1>
+          <p>Operational Performance Index • Feb 2026</p>
+        </div>
+
+        <div class="medical-grid">
+          <div class="chart-card">
+            <h3>Patient Inflow</h3>
+            <div class="canvas-holder"><canvas id="chart1"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <h3>Clinical Outcomes</h3>
+            <div class="canvas-holder"><canvas id="chart2"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <h3>Bed Occupancy</h3>
+            <div class="canvas-holder"><canvas id="chart3"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <h3>Staff Workload</h3>
+            <div class="canvas-holder"><canvas id="chart4"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <h3>ER Wait Times</h3>
+            <div class="canvas-holder"><canvas id="chart5"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <h3>Monthly Revenue</h3>
+            <div class="canvas-holder"><canvas id="chart6"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <h3>Age Demographics</h3>
+            <div class="canvas-holder"><canvas id="chart7"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <h3>Patient Satisfaction</h3>
+            <div class="canvas-holder"><canvas id="chart8"></canvas></div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="medical-footer">
+        <div class="footer-grid">
+          <div class="footer-col about-col">
+            <div class="footer logo">
+              <img src="./Assets/logo-stackly.webp" alt="Medical Logo" />
+            </div>
+            <!-- <h3>MediCare<span>+</span></h3> -->
+            <p>
+              Providing trusted and professional healthcare services with modern
+              medical technology and experienced specialists.
+            </p>
+            <div class="social-links">
+              <a href="./error.html"><i class="fa-brands fa-instagram"></i></a>
+              <a href="./error.html"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="./error.html"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="./error.html"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./service.html">Our Services</a></li>
+              <li><a href="./app.html">Appointments</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <div class="contact-item">
+              <span class="icon">📍</span>
+              <p>Salem, India</p>
+            </div>
+            <div class="contact-item">
+              <span class="icon">📞</span>
+              <p>+91 1234567789</p>
+            </div>
+            <div class="contact-item">
+              <span class="icon">✉</span>
+              <p>support@stackly.com</p>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Subscribe Newsletter</h4>
+            <p>Get latest updates and medical news straight to your inbox.</p>
+            <form id="newsletterForm" class="subscribe-box">
+              <input type="email" placeholder="Enter your email" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 <strong>MediCare+</strong>. All Rights Reserved.</p>
+        </div>
+      </footer>
+
+      <div class="overlay" id="overlay"></div>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: "ease-out-cubic",
+      startEvent: "aos:ready", // manual trigger
+    });
+  </script>
+  <!-- GSAP -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <script src="./script.js"></script>
+  <script src="./gsap.js"></script>
+  <script src="./swiper.js"></script>
+  <script src="./blog.js"></script>
+
+  <!-- Drop Down -->
+
+  <script>
+    const dropdown = document.querySelector(".dropdown");
+    const dropBtn = document.querySelector(".drop-btn");
+    const navLinks = document.querySelectorAll("nav ul li a");
+
+    dropBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      dropdown.classList.toggle("active");
+    });
+
+    // Close dropdown when clicking outside
+    window.addEventListener("click", function () {
+      dropdown.classList.remove("active");
+    });
+
+    // Close dropdown when clicking any other nav link
+    navLinks.forEach((link) => {
+      link.addEventListener("click", function () {
+        if (!this.closest(".dropdown")) {
+          dropdown.classList.remove("active");
+        }
+      });
+    });
+  </script>
+
+    <script>
+  const newsletterForm = document.getElementById("newsletterForm");
+
+  if (newsletterForm) {
+    newsletterForm.addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent default reload
+
+      // If validation passes → redirect
+      if (newsletterForm.checkValidity()) {
+        window.location.href = "./error.html";
+      }
+    });
+  }
+</script>
+
+  <script src="./dashboard.js"></script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consent Form</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+/* SAME STYLE */
+body{
+  font-family:'Segoe UI',sans-serif;
+  background:linear-gradient(135deg,#f0f9ff,#e0f2fe);
+  display:flex;justify-content:center;align-items:center;
+  min-height:100vh;margin:0;
+}
+.form-container{
+  background:#fff;padding:40px;width:500px;
+  border-radius:20px;box-shadow:0 20px 50px rgba(0,0,0,0.1);
+}
+h2{text-align:center;color:#0d6efd;margin-bottom:30px;}
+input,textarea{
+  width:100%;padding:12px;margin-bottom:15px;
+  border-radius:10px;border:1px solid #ddd;
+}
+button{
+  width:100%;padding:14px;border:none;
+  border-radius:12px;background:#0d6efd;
+  color:#fff;font-weight:bold;cursor:pointer;
+}
+button:hover{background:#0252a9;}
+</style>
+</head>
+<body>
+
+<div class="form-container">
+<h2><i class="fa-solid fa-signature"></i> Consent Form</h2>
+<input type="text" placeholder="Patient Name">
+<input type="text" placeholder="Procedure Name">
+<textarea placeholder="Consent Statement"></textarea>
+<button>Agree & Submit</button>
+</div>
+
+</body>
+</html>

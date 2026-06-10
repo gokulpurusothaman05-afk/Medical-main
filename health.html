@@ -1,0 +1,852 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <title>Medical</title>
+    <link rel="icon" href="./Assets/logo-icon.webp" />
+    <link rel="stylesheet" href="./health.css" />
+    <link rel="stylesheet" href="./layout.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Premium Medical Loader -->
+    <div class="medical-loader" id="medicalLoader">
+      <div class="loader-wrapper">
+        <div class="medical-cross">
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="ecg-line">
+          <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+            <path
+              d="M0 50 L70 50 L90 20 L110 80 L130 50 L200 50 L220 30 L240 70 L260 50 L500 50"
+            />
+          </svg>
+        </div>
+
+        <h3 class="loading-text">Preparing Your Care Experience...</h3>
+      </div>
+    </div>
+
+    <div class="the-main">
+      <header>
+        <div class="header1">
+          <div class="container1">
+            <h3>Welcome To Stackly Medical Health-Care Services.</h3>
+          </div>
+          <div class="container2">
+            <div>
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>(123)456-7890</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>Support@stackly.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="header2">
+          <div class="logo">
+            <a href="./index2.html">
+              <img src="./Assets/logo-stackly.webp" alt="Logo" />
+            </a>
+          </div>
+
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index2.html">Home </a>
+
+                <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index.html">Home 1</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./health.html">Health Packages</a></li>
+              <li><a href="./treatments.html">Treatments</a></li>
+              <li><a href="./patient.html">Patient Resources</a></li>
+              <li><a href="./contact2.html">Contact Us</a></li>
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <!-- <a class="btn" href="./error.html">Appointment</a> -->
+
+              <a href="./signin2.html">
+                <i class="fa-regular fa-circle-user"></i>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li
+            class="has-dropdown menu-item"
+            data-aos="fade-up-right"
+            data-aos-delay="100"
+          >
+            <div class="dropdown-header">
+              <a href="./index2.html">Home</a>
+              <span class="drop-caret" id="home-caret">▾</span>
+            </div>
+            <ul class="submenu" id="home-dropdown">
+              <li><a href="./index.html">Home 1</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="150">
+            <a href="./health.html">Health Packages</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="200">
+            <a href="./treatments.html">Treatments</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="250">
+            <a href="./patient.html">Patient Resources</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="300">
+            <a href="./contact2.html">Contact Us</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="400">
+            <a href="./signin2.html">Sign In</a>
+          </li>
+        </ul>
+
+        <div class="sidebar-login">
+          <!-- <a href="./error.html" data-aos="fade-up">
+            <button class="login-btn">Book an Appointment</button>
+          </a> -->
+        </div>
+      </div>
+
+      <main></main>
+
+      <section class="package-hero">
+        <!-- <div class="hero-shape shape-1"></div> -->
+        <!-- <div class="hero-shape shape-2"></div> -->
+
+        <div class="container hero-container">
+          <div class="hero-content">
+            <nav class="breadcrumb-nav">
+              <a href="./index2.html">Home</a>
+              <i class="fa-solid fa-chevron-right"></i>
+              <span>Health Packages</span>
+            </nav>
+
+            <h1 class="hero-title">
+              Comprehensive <br />
+              <span class="text-gradient">Health Packages</span>
+            </h1>
+
+            <p class="hero-desc">
+              Affordable preventive checkups designed for every stage of life.
+              Early detection is the smartest investment for your future.
+            </p>
+
+            <div class="hero-search">
+              <div class="search-input-group">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input
+                  type="text"
+                  placeholder="Search checkups (e.g. Heart, Full Body)..."
+                  required
+                />
+              </div>
+              <button class="btn-search" type="button">Find Package</button>
+            </div>
+
+            <div class="hero-stats-mini">
+              <div class="mini-stat">
+                <div class="stat-icon-sm"><i class="fa-solid fa-vial"></i></div>
+                <div>
+                  <strong>12+</strong>
+                  <span>Screening Types</span>
+                </div>
+              </div>
+              <div class="mini-stat">
+                <div class="stat-icon-sm">
+                  <i class="fa-solid fa-file-medical"></i>
+                </div>
+                <div>
+                  <strong>100%</strong>
+                  <span>Digital Reports</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="floating-tag tag-top">
+              <i class="fa-solid fa-bolt"></i> <span>Fast Results</span>
+            </div>
+
+            <div class="glass-card">
+              <div class="glass-icon-circle">
+                <i class="fa-solid fa-shield-heart"></i>
+              </div>
+              <h3>ISO Certified</h3>
+              <span>Global Standard Screening</span>
+              <div class="card-line"></div>
+              <p>Trusted by 25k+ Families</p>
+            </div>
+
+            <div class="floating-tag tag-bottom">
+              <i class="fa-solid fa-user-doctor"></i> <span>Expert Review</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-down">
+          <span class="mouse">
+            <span class="wheel"></span>
+          </span>
+          <p>Explore Packages</p>
+        </div>
+      </section>
+
+      <section class="intro-section">
+        <div class="container">
+          <div class="intro-header reveal">
+            <h2 class="section-title">
+              Why Prioritize
+              <span class="text-gradient">Preventive Health?</span>
+            </h2>
+            <p class="section-desc">
+              Investing in regular health checkups is the smartest decision for
+              a long, vibrant life. Early action leads to better outcomes.
+            </p>
+          </div>
+
+          <div class="intro-grid">
+            <div class="intro-feat reveal">
+              <div class="feat-icon">
+                <i class="fa-solid fa-microscope"></i>
+              </div>
+              <h4>Early Detection</h4>
+              <p>
+                Identify risks before they become symptoms with precision
+                diagnostics and advanced screening technology.
+              </p>
+            </div>
+            <div class="intro-feat reveal">
+              <div class="feat-icon">
+                <i class="fa-solid fa-shield-virus"></i>
+              </div>
+              <h4>Preventive Care</h4>
+              <p>
+                Stay ahead of health issues with customized proactive screenings
+                tailored to your age and history.
+              </p>
+            </div>
+            <div class="intro-feat reveal">
+              <div class="feat-icon">
+                <i class="fa-solid fa-piggy-bank"></i>
+              </div>
+              <h4>Cost-Effective</h4>
+              <p>
+                Save on long-term medical expenses by managing conditions before
+                they require complex treatments.
+              </p>
+            </div>
+            <div class="intro-feat reveal">
+              <div class="feat-icon">
+                <i class="fa-solid fa-heart-pulse"></i>
+              </div>
+              <h4>Regular Monitoring</h4>
+              <p>
+                Maintain a digital history of your vitals and blood work to
+                track improvements and life-long health trends.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cat-section">
+        <div class="container">
+          <div class="cat-header reveal">
+            <h2 class="section-title">
+              Essential <span class="text-gradient">Health Categories</span>
+            </h2>
+            <p class="section-desc">
+              Choose the right screening based on your lifestyle, age group, and
+              specific health concerns. Curated by our expert medical board.
+            </p>
+          </div>
+
+          <div class="cat-grid">
+            <div class="cat-card reveal">
+              <div class="cat-tag">Basic</div>
+              <div class="cat-img-wrapper">
+                <img src="./Assets/basix_11zon.webp" alt="Basic Health" />
+              </div>
+              <div class="cat-body">
+                <div class="cat-icon-main">
+                  <i class="fa-solid fa-kit-medical"></i>
+                </div>
+                <h3>General Checkup</h3>
+                <p class="cat-summary">
+                  A fundamental screening to assess overall health and detect
+                  common conditions early.
+                </p>
+                <ul class="cat-list">
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> CBC (Complete Blood
+                    Count)
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> Blood Sugar
+                    (Fasting)
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> Blood Pressure &
+                    BMI
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> Doctor Consultation
+                  </li>
+                </ul>
+                <div class="cat-footer">
+                  <div class="cat-price">$49 <span>/ session</span></div>
+                  <a href="./error2.html">
+                    <button class="btn-cat">Book Now</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="cat-card featured-cat reveal">
+              <div class="cat-tag">Best Value</div>
+              <div class="cat-img-wrapper">
+                <img
+                  src="./Assets/women health_11zon.webp"
+                  alt="Women Health"
+                />
+              </div>
+              <div class="cat-body">
+                <div class="cat-icon-main">
+                  <i class="fa-solid fa-venus"></i>
+                </div>
+                <h3>Women's Wellness</h3>
+                <p class="cat-summary">
+                  Targeted screenings focusing on hormonal health and women's
+                  unique physiological needs.
+                </p>
+                <ul class="cat-list">
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> Pap Smear & HPV
+                    Test
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> Thyroid Profile
+                    (T3, T4, TSH)
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> Bone Density Scan
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> Gynecologist
+                    Consult
+                  </li>
+                </ul>
+                <div class="cat-footer">
+                  <div class="cat-price">$129 <span>/ session</span></div>
+                  <a href="./error2.html">
+                    <button class="btn-cat">Book Now</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="cat-card reveal">
+              <div class="cat-tag">Advanced</div>
+              <div class="cat-img-wrapper">
+                <img src="./Assets/advanced_11zon.webp" alt="Senior Health" />
+              </div>
+              <div class="cat-body">
+                <div class="cat-icon-main">
+                  <i class="fa-solid fa-person-cane"></i>
+                </div>
+                <h3>Senior Gold</h3>
+                <p class="cat-summary">
+                  Comprehensive assessment for individuals over 60, focusing on
+                  age-related management.
+                </p>
+                <ul class="cat-list">
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> Cardiac Risk (ECG)
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> Vitamin D & B12
+                    Levels
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> Kidney & Liver
+                    Function
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> Specialist
+                    Physician
+                  </li>
+                </ul>
+                <div class="cat-footer">
+                  <div class="cat-price">$189 <span>/ session</span></div>
+                  <a href="./error2.html">
+                    <button class="btn-cat">Book Now</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cat-section">
+        <div class="container">
+          <div class="cat-header reveal">
+            <h2 class="section-title">
+              Specialized <span class="text-gradient">Care Panels</span>
+            </h2>
+            <p class="section-desc">
+              Advanced diagnostics targeting specific vital organs and lifestyle
+              conditions.
+            </p>
+          </div>
+
+          <div class="cat-grid">
+            <div class="cat-card reveal" id="heart">
+              <div class="cat-tag">Advanced</div>
+              <div class="cat-img-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?q=80&w=600&auto=format&fit=crop"
+                  alt="Heart Care"
+                />
+              </div>
+              <div class="cat-body">
+                <div class="cat-icon-main">
+                  <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <h3 class="hover-target">Heart Care</h3>
+                <p class="cat-summary">
+                  Complete cardiovascular assessment including imaging and
+                  specialist review.
+                </p>
+                <ul class="cat-list">
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> ECG & 2D Echo
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> Lipid Profile
+                    (Cholesterol)
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> Cardiac Risk
+                    Markers
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> Cardiologist
+                    Consultation
+                  </li>
+                </ul>
+                <div class="cat-footer">
+                  <div class="cat-price">$199 <span>/ session</span></div>
+                  <button class="btn-cat">Select</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cat-card reveal featured-cat" id="diabetes">
+              <div class="cat-tag">Chronic Care</div>
+              <div class="cat-img-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=600&auto=format&fit=crop"
+                  alt="Diabetes Care"
+                />
+              </div>
+              <div class="cat-body">
+                <div class="cat-icon-main">
+                  <i class="fa-solid fa-droplet"></i>
+                </div>
+                <h3 class="hover-target">Diabetes Care</h3>
+                <p class="cat-summary">
+                  Manage and monitor blood glucose levels with a comprehensive
+                  endocrine panel.
+                </p>
+                <ul class="cat-list">
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> Fasting Sugar &
+                    HbA1c
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> Urine Microalbumin
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> Kidney Function
+                    Test
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> Diet & Nutrition
+                    Consult
+                  </li>
+                </ul>
+                <div class="cat-footer">
+                  <div class="cat-price">$89 <span>/ session</span></div>
+                  <button class="btn-cat">Select</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cat-card reveal" id="women-wellness">
+              <div class="cat-tag">Essential</div>
+              <div class="cat-img-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=600&auto=format&fit=crop"
+                  alt="Women Wellness"
+                />
+              </div>
+              <div class="cat-body">
+                <div class="cat-icon-main">
+                  <i class="fa-solid fa-venus"></i>
+                </div>
+                <h3 class="hover-target">Women's Wellness</h3>
+                <p class="cat-summary">
+                  Screening for thyroid, reproductive health, and early cancer
+                  detection.
+                </p>
+                <ul class="cat-list">
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> Thyroid Profile &
+                    Pap Smear
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> Advanced Breast
+                    Screening
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> Bone Mineral
+                    Density
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> Gynecologist
+                    Consultation
+                  </li>
+                </ul>
+                <div class="cat-footer">
+                  <div class="cat-price">$149 <span>/ session</span></div>
+                  <button class="btn-cat">Select</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="medical-footer">
+        <div class="footer-grid">
+          <div class="footer-col about-col">
+            <div class="footer logo">
+              <img src="./Assets/logo-stackly.webp" alt="Medical Logo" />
+            </div>
+            <!-- <h3>MediCare<span>+</span></h3> -->
+            <p>
+              Providing trusted and professional healthcare services with modern
+              medical technology and experienced specialists.
+            </p>
+            <div class="social-links">
+              <a href="./error2.html"><i class="fa-brands fa-instagram"></i></a>
+              <a href="./error2.html"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="./error2.html"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="./error2.html"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="./health.html">Health Packages</a></li>
+              <li><a href="./treatments.html">Treatments</a></li>
+              <li><a href="./patient.html">Patient Resources</a></li>
+              <li><a href="./contact2.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <div class="contact-item">
+              <span class="icon">📍</span>
+              <p>Salem, India</p>
+            </div>
+            <div class="contact-item">
+              <span class="icon">📞</span>
+              <p>+91 1234567789</p>
+            </div>
+            <div class="contact-item">
+              <span class="icon">✉</span>
+              <p>support@stackly.com</p>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Subscribe Newsletter</h4>
+            <p>Get latest updates and medical news straight to your inbox.</p>
+            <form id="newsletterForm" class="subscribe-box">
+              <input type="email" placeholder="Enter your email" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 <strong>MediCare+</strong>. All Rights Reserved.</p>
+        </div>
+      </footer>
+
+      <div class="overlay" id="overlay"></div>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: "ease-out-cubic",
+      startEvent: "aos:ready", // manual trigger
+    });
+  </script>
+  <script src="./script.js"></script>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- hero -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // 1. Register ScrollTrigger (if you use it for sections below)
+      gsap.registerPlugin(ScrollTrigger);
+
+      // 2. Create the Master Timeline
+      const tl = gsap.timeline({
+        defaults: { ease: "power4.out", duration: 1.2 },
+      });
+
+      // Ensure elements are visible for GSAP (overriding the CSS hidden state)
+      gsap.set(
+        ".hero-content > *, .glass-card, .floating-tag, .hero-shape, .scroll-down",
+        {
+          visibility: "visible",
+        },
+      );
+
+      // --- ENTRANCE SEQUENCE ---
+
+      // A. Animate background shapes first
+      tl.from(
+        ".hero-shape",
+        {
+          scale: 1,
+          opacity: 0,
+          stagger: 0.3,
+          duration: 2,
+          ease: "expo.out",
+        },
+        0,
+      );
+
+      // B. Staggered text reveal with a "blur-to-clear" effect
+      tl.from(
+        ".hero-content > *",
+        {
+          opacity: 1,
+          y: 40,
+          filter: "blur(15px)",
+          stagger: 0.15,
+          clearProps: "filter", // Removes blur filter after animation for performance
+        },
+        "-=1.5",
+      );
+
+      // C. 3D "Pop" for the Glass Card
+      tl.from(
+        ".glass-card",
+        {
+          opacity: 1,
+          scale: 0.8,
+          rotationY: 25,
+          rotationX: -10,
+          y: 60,
+          duration: 1.5,
+          ease: "back.out(1.7)",
+        },
+        "-=1.2",
+      );
+
+      // D. Slide in the floating tags
+      tl.from(
+        ".floating-tag",
+        {
+          opacity: 1,
+          x: (i) => (i === 0 ? 50 : -50), // Tag 1 comes from right, Tag 2 from left
+          duration: 1,
+          stagger: 0.2,
+        },
+        "-=0.8",
+      );
+
+      // E. Fade in the scroll indicator
+      tl.from(
+        ".scroll-down",
+        {
+          opacity: 1,
+          y: -20,
+          duration: 1,
+        },
+        "-=0.5",
+      );
+
+      // --- INFINITE AMBIENT MOTIONS ---
+
+      // Floating Glass Card (Sine wave motion)
+      gsap.to(".glass-card", {
+        y: 15,
+        rotationZ: 1,
+        duration: 3,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
+
+      // Drifting Background Shapes
+      gsap.to(".shape-1", {
+        x: 30,
+        y: -20,
+        duration: 8,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
+
+      gsap.to(".shape-2", {
+        x: -40,
+        y: 30,
+        duration: 10,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
+
+      // Subtle "pulse" for the search button to draw attention
+      gsap.to(".btn-search", {
+        boxShadow: "0 0 20px rgba(13, 110, 253, 0.4)",
+        duration: 2,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const observerOptions = {
+        threshold: 0.1, // Trigger when 10% of element is visible
+        rootMargin: "0px 0px -50px 0px", // Trigger slightly before it hits the viewport
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+          }
+        });
+      }, observerOptions);
+
+      // Observe all elements with 'reveal' class
+      document.querySelectorAll(".reveal").forEach((el) => {
+        observer.observe(el);
+      });
+    });
+  </script>
+
+  <script>
+    const newsletterForm = document.getElementById("newsletterForm");
+
+    if (newsletterForm) {
+      newsletterForm.addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent default reload
+
+        // If validation passes → redirect
+        if (newsletterForm.checkValidity()) {
+          window.location.href = "./error2.html";
+        }
+      });
+    }
+  </script>
+
+
+<script>
+  const searchBtn = document.querySelector(".btn-search");
+  const searchInput = document.querySelector(".hero-search input");
+
+  searchBtn.addEventListener("click", function () {
+    const value = searchInput.value.trim().toLowerCase();
+
+    let targetId = "";
+
+    if (value.includes("heart")) {
+      targetId = "heart";
+    } 
+    else if (value.includes("diabetes")) {
+      targetId = "diabetes";
+    } 
+    else if (value.includes("women")) {
+      targetId = "women-wellness";
+    }
+
+    if (targetId) {
+      const section = document.getElementById(targetId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      alert("Package not found. Try: Heart, Diabetes, Women Wellness");
+    }
+  });
+</script>
+</html>

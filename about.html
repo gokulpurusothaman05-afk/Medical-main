@@ -1,0 +1,894 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <title>Medical</title>
+    <link rel="icon" href="./Assets/logo-icon.webp" />
+    <link rel="stylesheet" href="./about.css" />
+    <link rel="stylesheet" href="./layout.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Premium Medical Loader -->
+    <div class="medical-loader" id="medicalLoader">
+      <div class="loader-wrapper">
+        <div class="medical-cross">
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="ecg-line">
+          <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+            <path
+              d="M0 50 L70 50 L90 20 L110 80 L130 50 L200 50 L220 30 L240 70 L260 50 L500 50"
+            />
+          </svg>
+        </div>
+
+        <h3 class="loading-text">Preparing Your Care Experience...</h3>
+      </div>
+    </div>
+
+    <div class="the-main">
+      <header>
+        <div class="header1">
+          <div class="container1">
+            <h3>Welcome To Stackly Medical Health-Care Services.</h3>
+          </div>
+          <div class="container2">
+            <div>
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>(123)456-7890</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>Support@stackly.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="header2">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./Assets/logo-stackly.webp" alt="Logo" />
+            </a>
+          </div>
+
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index.html">Home</a>
+
+                <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index2.html">Home 2</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./service.html">Services</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+              <li><a href="./dashboard.html">Dashboard</a></li>
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <a class="btn" href="./app.html">Appointment</a>
+
+              <a href="./signin.html">
+                <i class="fa-regular fa-circle-user"></i>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li
+            class="has-dropdown menu-item"
+            data-aos="fade-up-right"
+            data-aos-delay="100"
+          >
+            <div class="dropdown-header">
+              <a href="./index.html">Home</a>
+              <span class="drop-caret" id="home-caret">▾</span>
+            </div>
+            <ul class="submenu" id="home-dropdown">
+              <li><a href="./index2.html">Home 2</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="150">
+            <a href="./about.html">About</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="200">
+            <a href="./service.html">Services</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="250">
+            <a href="./blog.html">Blog</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="300">
+            <a href="./contact.html">Contact Us</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="350">
+            <a href="./dashboard.html">Dashboard</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="400">
+            <a href="./signin.html">Sign In</a>
+          </li>
+        </ul>
+
+        <div class="sidebar-login">
+          <a href="./app.html">
+            <button class="login-btn">Book an Appointment</button>
+          </a>
+        </div>
+      </div>
+
+      <main id="about-main">
+        <section class="about-hero">
+          <div class="hero-bg-curve"></div>
+          <div class="hero-pattern"></div>
+
+          <div class="container hero-wrapper">
+            <div class="hero-text-side">
+              <div class="badge-wrapper">
+                <span class="badge">Est. 1998</span>
+              </div>
+
+              <h1 class="hero-title">
+                <span class="title-line"><span>Redefining</span></span>
+                <span class="title-line"
+                  ><span>Modern</span>
+                  <span class="accent">Medicine</span></span
+                >
+              </h1>
+
+              <p class="hero-p">
+                At Stackly Medical, we bridge the gap between advanced clinical
+                technology and the human touch. Our mission is to provide
+                healthcare that is as sophisticated as it is compassionate.
+              </p>
+
+              <div class="hero-actions">
+                <a href="./error.html">
+                <button class="btn-primary">Explore Our Story</button>
+                </a>
+                <div class="btn-video">
+                  <a href="./error.html">
+                    <div class="btn-primary">Watch Video ▶</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-visual-side">
+              <div class="ambient-glow"></div>
+
+              <div class="stats-card">
+                <div class="stats-icon">✦</div>
+                <div>
+                  <div class="stats-val">99%</div>
+                  <div class="stats-label">Patient Success</div>
+                </div>
+              </div>
+
+              <div class="stadium-image-wrap">
+                <img
+                  src="./Assets/abthero_11zon.webp"
+                  alt="Medical Professional"
+                  class="main-hero-img"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div class="about">
+        <div class="about-container">
+          <!-- LEFT : IMAGE -->
+          <div class="about-image" data-aos="zoom-in" data-aos-delay="100">
+            <img
+              src="./Assets/aboutimgg_11zon_11zon.webp"
+              alt="Stackly Medical Healthcare"
+            />
+
+            <div class="about-chart-box">
+              <h4>25,000+ Patients</h4>
+              <div class="about-chart">Treated With Compassion & Care</div>
+            </div>
+          </div>
+
+          <!-- RIGHT : CONTENT -->
+          <div class="about-content">
+            <p class="about-tag" data-aos="fade-left" data-aos-delay="100">
+              <span></span> OUR HEALTHCARE EXCELLENCE
+            </p>
+
+            <h1 data-aos="fade-left" data-aos-delay="150">
+              Advanced Medical Care With Compassion & Trust
+            </h1>
+
+            <!-- TABS -->
+            <div class="about-tabs">
+              <button
+                class="about-tab active"
+                data-tab="about-mission"
+                data-aos="zoom-out"
+                data-aos-delay="100"
+              >
+                Our Mission
+              </button>
+              <button
+                class="about-tab"
+                data-tab="about-vision"
+                data-aos="zoom-out"
+                data-aos-delay="100"
+              >
+                Our Vision
+              </button>
+              <button
+                class="about-tab"
+                data-tab="about-journey"
+                data-aos="zoom-out"
+                data-aos-delay="100"
+              >
+                Our Expertise
+              </button>
+            </div>
+
+            <!-- TAB CONTENT -->
+            <div
+              class="about-tab-content"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <p class="about-desc active" id="about-mission">
+                Our mission is to deliver accessible, affordable, and advanced
+                healthcare services while prioritizing patient safety, comfort,
+                and personalized treatment at every step.
+              </p>
+
+              <p
+                class="about-desc"
+                id="about-vision"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+              >
+                Our vision is to become a trusted healthcare leader known for
+                medical excellence, innovation, and a patient-first approach
+                that transforms lives at every step.
+              </p>
+
+              <p
+                class="about-desc"
+                id="about-journey"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+              >
+                From specialized diagnostics to advanced surgical procedures,
+                our journey reflects dedication to clinical excellence, modern
+                technology, and compassionate care.
+              </p>
+            </div>
+
+            <!-- FEATURES -->
+            <div class="about-features">
+              <div data-aos="zoom-in" data-aos-delay="100">
+                <i class="fa-solid fa-circle-check"></i>
+                24/7 Emergency Care
+              </div>
+              <div data-aos="zoom-in" data-aos-delay="100">
+                <i class="fa-solid fa-circle-check"></i>
+                Certified Specialist Doctors
+              </div>
+              <div data-aos="zoom-in" data-aos-delay="100">
+                <i class="fa-solid fa-circle-check"></i>
+                Advanced Diagnostic Technology
+              </div>
+              <div data-aos="zoom-in" data-aos-delay="100">
+                <i class="fa-solid fa-circle-check"></i>
+                Secure Digital Health Records
+              </div>
+            </div>
+
+            <!-- ACTIONS -->
+            <div class="about-actions">
+              <a
+                href="./app.html"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+              >
+                <button class="apply-btn">Book Appointment →</button>
+              </a>
+
+              <div class="contact" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fa-solid fa-phone"></i>
+                <span>Speak with a Medical Specialist</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="testimonial-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="sub-tag">PATIENT STORIES</span>
+            <h2>What Our Patients Say</h2>
+            <p>
+              Trusted care. Real experiences. Genuine recovery stories from our
+              community.
+            </p>
+          </div>
+
+          <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-card">
+                  <div class="card-top">
+                    <div class="quote-icon">“</div>
+                    <div class="rating">★★★★★</div>
+                  </div>
+                  <p class="message">
+                    The cardiology department saved my life. The doctors were
+                    extremely professional and supportive throughout my surgery.
+                    The follow-up care was exceptional.
+                  </p>
+                  <div class="patient-info">
+                    <div class="img-wrapper">
+                      <img
+                        src="./Assets/testi1_11zon.webp"
+                        alt="Patient"
+                      />
+                      <span class="verified-check">✓</span>
+                    </div>
+                    <div>
+                      <h4>Rajesh Kumar</h4>
+                      <span>Cardiology Patient</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-card">
+                  <div class="card-top">
+                    <div class="quote-icon">“</div>
+                    <div class="rating">★★★★★</div>
+                  </div>
+                  <p class="message">
+                    My dental procedure was completely painless. The staff made
+                    me feel comfortable. Highly recommended for anyone with
+                    dental anxiety!
+                  </p>
+                  <div class="patient-info">
+                    <div class="img-wrapper">
+                      <img
+                        src="./Assets/testi2_11zon.webp"
+                        alt="Patient"
+                      />
+                      <span class="verified-check">✓</span>
+                    </div>
+                    <div>
+                      <h4>Anita Sharma</h4>
+                      <span>Dental Care</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-card">
+                  <div class="card-top">
+                    <div class="quote-icon">“</div>
+                    <div class="rating">★★★★★</div>
+                  </div>
+                  <p class="message">
+                    The emergency team responded immediately when my father
+                    collapsed. We are forever grateful for their dedication and
+                    quick thinking. Truly world-class.
+                  </p>
+                  <div class="patient-info">
+                    <div class="img-wrapper">
+                      <img
+                        src="./Assets/testi3_11zon.webp"
+                        alt="Patient"
+                      />
+                      <span class="verified-check">✓</span>
+                    </div>
+                    <div>
+                      <h4>Mohammed Ali</h4>
+                      <span>Emergency Care</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-card">
+                  <div class="card-top">
+                    <div class="quote-icon">“</div>
+                    <div class="rating">★★★★★</div>
+                  </div>
+                  <p class="message">
+                    Excellent eye care services. My laser surgery was successful
+                    and my vision improved dramatically. I can see the world
+                    clearly now!
+                  </p>
+                  <div class="patient-info">
+                    <div class="img-wrapper">
+                      <img
+                        src="./Assets/testi4_11zon.webp"
+                        alt="Patient"
+                      />
+                      <span class="verified-check">✓</span>
+                    </div>
+                    <div>
+                      <h4>Priya Nair</h4>
+                      <span>Eye Care</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-card">
+                  <div class="card-top">
+                    <div class="quote-icon">“</div>
+                    <div class="rating">★★★★★</div>
+                  </div>
+                  <p class="message">
+                    The physiotherapy sessions helped me recover from my sports
+                    injury much faster than expected. Very knowledgeable and
+                    friendly therapists.
+                  </p>
+                  <div class="patient-info">
+                    <div class="img-wrapper">
+                      <img
+                        src="./Assets/testi5_11zon.webp"
+                        alt="Patient"
+                      />
+                      <span class="verified-check">✓</span>
+                    </div>
+                    <div>
+                      <h4>Suresh Iyer</h4>
+                      <span>Sports Medicine</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-card">
+                  <div class="card-top">
+                    <div class="quote-icon">“</div>
+                    <div class="rating">★★★★★</div>
+                  </div>
+                  <p class="message">
+                    As a first-time mother, the maternity staff was incredible.
+                    They gave me the confidence and support I needed during my
+                    stay. Thank you!
+                  </p>
+                  <div class="patient-info">
+                    <div class="img-wrapper">
+                      <img
+                        src="./Assets/testi6_11zon.webp"
+                        alt="Patient"
+                      />
+                      <span class="verified-check">✓</span>
+                    </div>
+                    <div>
+                      <h4>Meena Patel</h4>
+                      <span>Maternity Care</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-choose-us">
+        <div class="container">
+          <div class="section-header">
+            <span class="sub-heading">Why Choose Us</span>
+            <h2>Experience The Future of <span>Modern Healthcare</span></h2>
+            <p>
+              Dedicated to providing the highest quality clinical care and a
+              patient experience that is second to none.
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="card-icon">
+                <i class="fas fa-microscope"></i>
+                <div class="icon-bg"></div>
+              </div>
+              <h3>Advanced Technology</h3>
+              <p>
+                Utilizing state-of-the-art diagnostic equipment and surgical
+                robotics for precision treatment.
+              </p>
+              <a href="./error.html" class="card-link">Read More +</a>
+            </div>
+
+            <div class="feature-card highlighted">
+              <div class="card-icon">
+                <i class="fas fa-user-nurse"></i>
+                <div class="icon-bg"></div>
+              </div>
+              <h3>Expert Specialists</h3>
+              <p>
+                A team of world-renowned doctors and medical staff committed to
+                your long-term health.
+              </p>
+              <a href="./error.html" class="card-link">Read More +</a>
+            </div>
+
+            <div class="feature-card">
+              <div class="card-icon">
+                <i class="fas fa-clock"></i>
+                <div class="icon-bg"></div>
+              </div>
+              <h3>24/7 Support</h3>
+              <p>
+                Emergency care and round-the-clock medical assistance whenever
+                you need it most.
+              </p>
+              <a href="./error.html" class="card-link">Read More +</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team-section" id="medical-team">
+        <div class="container">
+          <div class="section-header">
+            <span class="sub-tag">EXPERT SPECIALISTS</span>
+            <h2>Meet Our Dedicated Doctors</h2>
+            <p>
+              Our team consists of world-class medical professionals committed
+              to providing the highest quality healthcare services.
+            </p>
+          </div>
+
+          <div class="team-grid">
+            <div class="team-card animate-team">
+              <div class="team-img">
+                <img
+                  src="./Assets/team1_11zon.webp"
+                  alt="Dr. James Wilson"
+                />
+                <div class="social-overlay">
+                  <a href="./error.html"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="./error.html"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="./error.html"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="./error.html"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="team-info">
+                <h4>Dr. James Wilson</h4>
+                <p>Chief Cardiologist</p>
+                <div class="team-badge">15+ Yrs Exp</div>
+              </div>
+            </div>
+
+            <div class="team-card animate-team">
+              <div class="team-img">
+                <img
+                  src="./Assets/team2_11zon.webp"
+                  alt="Dr. Sarah Jenkins"
+                />
+                <div class="social-overlay">
+                  <a href="./error.html"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="./error.html"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="./error.html"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="./error.html"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="team-info">
+                <h4>Dr. Sarah Jenkins</h4>
+                <p>Pediatric Specialist</p>
+                <div class="team-badge">10+ Yrs Exp</div>
+              </div>
+            </div>
+
+            <div class="team-card animate-team">
+              <div class="team-img">
+                <img
+                  src="./Assets/team3_11zon.webp"
+                  alt="Dr. Michael Chen"
+                />
+                <div class="social-overlay">
+                  <a href="./error.html"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="./error.html"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="./error.html"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="./error.html"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="team-info">
+                <h4>Dr. Michael Chen</h4>
+                <p>Neurologist</p>
+                <div class="team-badge">12+ Yrs Exp</div>
+              </div>
+            </div>
+
+            <div class="team-card animate-team">
+              <div class="team-img">
+                <img
+                  src="./Assets/team4_11zon.webp"
+                  alt="Dr. Emily Adams"
+                />
+                <div class="social-overlay">
+                  <a href="./error.html"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="./error.html"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="./error.html"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="./error.html"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="team-info">
+                <h4>Dr. Emily Adams</h4>
+                <p>Dental Surgeon</p>
+                <div class="team-badge">8+ Yrs Exp</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="medical-footer">
+        <div class="footer-grid">
+          <div class="footer-col about-col">
+            <div class="footer logo">
+              <img src="./Assets/logo-stackly.webp" alt="Medical Logo" />
+            </div>
+            <!-- <h3>MediCare<span>+</span></h3> -->
+            <p>
+              Providing trusted and professional healthcare services with modern
+              medical technology and experienced specialists.
+            </p>
+            <div class="social-links">
+              <a href="./error.html"><i class="fa-brands fa-instagram"></i></a>
+              <a href="./error.html"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="./error.html"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="./error.html"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./service.html">Our Services</a></li>
+              <li><a href="./app.html">Appointments</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <div class="contact-item">
+              <span class="icon">📍</span>
+              <p>Salem, India</p>
+            </div>
+            <div class="contact-item">
+              <span class="icon">📞</span>
+              <p>+91 1234567789</p>
+            </div>
+            <div class="contact-item">
+              <span class="icon">✉</span>
+              <p>support@stackly.com</p>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Subscribe Newsletter</h4>
+            <p>Get latest updates and medical news straight to your inbox.</p>
+            <form id="newsletterForm" class="subscribe-box">
+              <input type="email" placeholder="Enter your email" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 <strong>MediCare+</strong>. All Rights Reserved.</p>
+        </div>
+      </footer>
+
+
+      <div class="overlay" id="overlay"></div>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: "ease-out-cubic",
+      startEvent: "aos:ready", // manual trigger
+    });
+  </script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <script src="./script.js"></script>
+  <script src="./gsap.js"></script>
+  <script src="./swiper.js"></script>
+  <script src="./blog.js"></script>
+
+  <!-- Drop Down -->
+
+  <script>
+    const dropdown = document.querySelector(".dropdown");
+    const dropBtn = document.querySelector(".drop-btn");
+    const navLinks = document.querySelectorAll("nav ul li a");
+
+    dropBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      dropdown.classList.toggle("active");
+    });
+
+    // Close dropdown when clicking outside
+    window.addEventListener("click", function () {
+      dropdown.classList.remove("active");
+    });
+
+    // Close dropdown when clicking any other nav link
+    navLinks.forEach((link) => {
+      link.addEventListener("click", function () {
+        if (!this.closest(".dropdown")) {
+          dropdown.classList.remove("active");
+        }
+      });
+    });
+  </script>
+
+  <script>
+    // About
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const aboutTabs = document.querySelectorAll(".about-tab");
+      const aboutContents = document.querySelectorAll(".about-desc");
+
+      aboutTabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          // Remove active from all
+          aboutTabs.forEach((t) => t.classList.remove("active"));
+          aboutContents.forEach((c) => c.classList.remove("active"));
+
+          // Add active to clicked
+          tab.classList.add("active");
+          document.getElementById(tab.dataset.tab).classList.add("active");
+        });
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const tl = gsap.timeline({ defaults: { ease: "power4.out" } });
+
+      // 1. Hide elements initially
+      gsap.set(".title-line span", { y: "100%" });
+      gsap.set(".hero-p, .badge-wrapper, .hero-actions", { opacity: 0, y: 20 });
+      gsap.set(".stadium-image-wrap", { x: 100, opacity: 0, rotate: 2 });
+      gsap.set(".stats-card", { scale: 0, opacity: 0 });
+
+      // 2. The Entrance Timeline
+      tl.to(".stadium-image-wrap", {
+        duration: 1.8,
+        x: 0,
+        opacity: 1,
+        rotate: 0,
+        ease: "expo.out",
+      })
+        .to(
+          ".title-line span",
+          {
+            duration: 1.2,
+            y: 0,
+            stagger: 0.15,
+          },
+          "-=1.2",
+        )
+        .to(
+          ".badge-wrapper, .hero-p, .hero-actions",
+          {
+            duration: 1,
+            opacity: 1,
+            y: 0,
+            stagger: 0.1,
+          },
+          "-=0.8",
+        )
+        .to(
+          ".stats-card",
+          {
+            duration: 0.8,
+            scale: 1,
+            opacity: 1,
+            ease: "back.out(1.7)",
+          },
+          "-=0.5",
+        );
+
+      // 3. Smooth Floating Loop for the Stats Card
+      gsap.to(".stats-card", {
+        y: -20,
+        duration: 3,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
+
+      // 4. Mouse Follow Parallax
+      const visual = document.querySelector(".hero-visual-side");
+      visual.addEventListener("mousemove", (e) => {
+        const x = (e.clientX / window.innerWidth - 0.5) * 40;
+        const y = (e.clientY / window.innerHeight - 0.5) * 40;
+
+        gsap.to(".main-hero-img", {
+          duration: 1,
+          x: x * 0.5,
+          y: y * 0.5,
+          scale: 1.05,
+          ease: "power2.out",
+        });
+      });
+    });
+  </script>
+
+    <script>
+  const newsletterForm = document.getElementById("newsletterForm");
+
+  if (newsletterForm) {
+    newsletterForm.addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent default reload
+
+      // If validation passes → redirect
+      if (newsletterForm.checkValidity()) {
+        window.location.href = "./error.html";
+      }
+    });
+  }
+</script>
+</html>

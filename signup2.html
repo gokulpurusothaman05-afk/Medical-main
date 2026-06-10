@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>Sign Up | Stackly Medical</title>
+    <link rel="icon" href="./Assets/logo-icon.webp" />
+    <link rel="stylesheet" href="./login2.css" />
+    <link rel="stylesheet" href="./layout.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header2">
+        <div class="logo">
+          <a href="./index2.html">
+            <img src="./Assets/logo-stackly.webp" alt="Logo" />
+          </a>
+        </div>
+        <div class="icons">
+          <div class="login">
+            <a href="./signin2.html" aria-label="Sign In">
+              <i class="fa-regular fa-circle-user"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="Structure">
+      <div class="login-wrapper">
+        <div class="login-card">
+          <div class="login-left">
+            <h1>Join <span>Stackly Medical</span></h1>
+            <ul>
+              <li>✔ Patient portal access</li>
+              <li>✔ Treatment updates</li>
+              <li>✔ Health package tracking</li>
+            </ul>
+          </div>
+          <div class="login-right">
+            <h2>Sign Up</h2>
+            <p>Create your account to get started.</p>
+            <form id="signupForm" method="post" action="#" novalidate>
+              <div class="input-group email-group">
+                <input
+                  type="email"
+                  id="signupEmail"
+                  name="email"
+                  autocomplete="username"
+                  placeholder="you@gmail.com"
+                  required
+                />
+              </div>
+              <div class="input-group password-group">
+                <input
+                  type="password"
+                  id="signupPassword"
+                  name="password"
+                  autocomplete="new-password"
+                  placeholder="Create password"
+                  required
+                />
+                <span id="toggleSignupPassword" role="button" tabindex="0">Show</span>
+              </div>
+              <button type="submit" class="login-btn1">Create Account</button>
+              <div class="signup">
+                <p>Already have an account? <a href="./signin2.html">Sign In</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./auth.js"></script>
+    <script>
+      const toggleSignupPassword = document.getElementById("toggleSignupPassword");
+      const signupPassword = document.getElementById("signupPassword");
+      const signupForm = document.getElementById("signupForm");
+
+      toggleSignupPassword.addEventListener("click", () => {
+        const type = signupPassword.type === "password" ? "text" : "password";
+        signupPassword.type = type;
+        toggleSignupPassword.textContent = type === "password" ? "Show" : "Hide";
+      });
+
+      signupForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const email = document.getElementById("signupEmail").value.trim();
+        const pass = signupPassword.value.trim();
+        if (!validateMedicalCredentials(email, pass)) return;
+        StacklyAuth.signIn(email);
+        window.location.href = "./patient.html";
+      });
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>

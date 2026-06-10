@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>Sign Out | Stackly Medical</title>
+    <link rel="icon" href="./Assets/logo-icon.webp" />
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="./layout.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header1">
+        <div class="container1">
+          <h3>Welcome To Stackly Medical Health-Care Services.</h3>
+        </div>
+        <div class="container2">
+          <div>
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>(123)456-7890</p>
+          </div>
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+            <p>Support@stackly.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="header2">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./Assets/logo-stackly.webp" alt="Logo" />
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./service.html">Services</a></li>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+          </ul>
+        </nav>
+        <div class="icons">
+          <div class="login">
+            <a class="btn" href="./app.html">Appointment</a>
+            <a href="./signin.html" aria-label="Sign In">
+              <i class="fa-regular fa-circle-user"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="Structure">
+      <div class="login-wrapper">
+        <div class="login-card">
+          <div class="login-left">
+            <h1>Sign out of <span>Stackly Medical</span></h1>
+            <ul>
+              <li>✔ End your current session safely</li>
+              <li>✔ Protect your medical information</li>
+              <li>✔ Prevent unauthorized access</li>
+            </ul>
+          </div>
+
+          <div class="login-right">
+            <h2>Sign Out</h2>
+            <p>You are about to end your session on this device.</p>
+
+            <button type="button" class="login-btn1" id="confirmSignOut">
+              Confirm Sign Out
+            </button>
+
+            <div class="signup">
+              <p><a href="./dashboard.html">Return to Dashboard</a></p>
+              <p><a href="./signin.html">Sign In again</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./auth.js"></script>
+    <script>
+      document.getElementById("confirmSignOut").addEventListener("click", () => {
+        StacklyAuth.signOut();
+        window.location.href = "./signin.html";
+      });
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>

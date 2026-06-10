@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <title>Medical</title>
+    <link rel="icon" href="./Assets/logo-icon.webp" />
+    <link rel="stylesheet" href="./treatments.css" />
+    <link rel="stylesheet" href="./layout.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Premium Medical Loader -->
+    <div class="medical-loader" id="medicalLoader">
+      <div class="loader-wrapper">
+        <div class="medical-cross">
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="ecg-line">
+          <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+            <path
+              d="M0 50 L70 50 L90 20 L110 80 L130 50 L200 50 L220 30 L240 70 L260 50 L500 50"
+            />
+          </svg>
+        </div>
+
+        <h3 class="loading-text">Preparing Your Care Experience...</h3>
+      </div>
+    </div>
+
+    <div class="the-main">
+      <header>
+        <div class="header1">
+          <div class="container1">
+            <h3>Welcome To Stackly Medical Health-Care Services.</h3>
+          </div>
+          <div class="container2">
+            <div>
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>(123)456-7890</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>Support@stackly.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="header2">
+          <div class="logo">
+            <a href="./index2.html">
+              <img src="./Assets/logo-stackly.webp" alt="Logo" />
+            </a>
+          </div>
+
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index2.html">Home </a>
+
+                <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index.html">Home 1</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./health.html">Health Packages</a></li>
+              <li><a href="./treatments.html">Treatments</a></li>
+              <li><a href="./patient.html">Patient Resources</a></li>
+              <li><a href="./contact2.html">Contact Us</a></li>
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <!-- <a class="btn" href="./error.html">Appointment</a> -->
+
+              <a href="./signin2.html">
+                <i class="fa-regular fa-circle-user"></i>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li
+            class="has-dropdown menu-item"
+            data-aos="fade-up-right"
+            data-aos-delay="100"
+          >
+            <div class="dropdown-header">
+              <a href="./index2.html">Home</a>
+              <span class="drop-caret" id="home-caret">▾</span>
+            </div>
+            <ul class="submenu" id="home-dropdown">
+              <li><a href="./index.html">Home 1</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="150">
+            <a href="./health.html">Health Packages</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="200">
+            <a href="./treatments.html">Treatments</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="250">
+            <a href="./patient.html">Patient Resources</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="300">
+            <a href="./contact2.html">Contact Us</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="400">
+            <a href="./signin2.html">Sign In</a>
+          </li>
+        </ul>
+
+        <div class="sidebar-login">
+          <!-- <a href="./error.html" data-aos="fade-up">
+            <button class="login-btn">Book an Appointment</button>
+          </a> -->
+        </div>
+      </div>
+
+      <main></main>
+
+      <section class="hero-treatment">
+        <div class="hero-bg-visuals">
+          <div class="bg-glow"></div>
+          <div class="floating-orb"></div>
+        </div>
+
+        <div class="container">
+          <!-- LEFT CONTENT -->
+          <div class="hero-content">
+            <div class="breadcrumb-nav">Home • Medical Treatments</div>
+
+            <h1 class="hero-title">
+              Pioneering Modern <br />
+              <span class="text-gradient">Medical Science</span>
+            </h1>
+
+            <p class="hero-tagline">
+              Experience a new standard of
+              <span class="highlight">precision medicine</span>. Integrating
+              innovation with compassionate care.
+            </p>
+
+            <div class="hero-features-list">
+              <div class="h-feat-item">AI Diagnostics</div>
+              <div class="h-feat-item">Global Specialists</div>
+              <div class="h-feat-item">Real-time Care</div>
+            </div>
+
+            <div class="hero-stats-stylish">
+              <div class="stat-card">
+                <div>
+                  <span class="stat-num" data-val="15">0</span>
+                  <span class="plus">+</span>
+                </div>
+                <div class="stat-label">Specialties</div>
+              </div>
+
+              <div class="stat-card">
+                <div>
+                  <span class="stat-num" data-val="98">0</span>
+                  <span class="plus">%</span>
+                </div>
+                <div class="stat-label">Success Rate</div>
+              </div>
+
+              <div class="stat-card">
+                <div>
+                  <span class="stat-num" data-val="24">0</span>
+                  <span class="plus">h</span>
+                </div>
+                <div class="stat-label">Response</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT IMAGES -->
+          <div class="hero-visuals">
+            <div class="img-card img-main">
+              <img src="./Assets/theimg1_11zon.webp" alt="Doctor" />
+            </div>
+
+            <div class="img-card img-1">
+              <img src="./Assets/theimg2_11zon.webp" alt="Lab" />
+            </div>
+
+            <div class="img-card img-2">
+              <img src="./Assets/theimg3_11zon.webp" alt="Tech" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-hospital">
+        <div class="container">
+          <div class="intro-grid">
+            <div class="intro-visual">
+              <div class="main-image-wrapper">
+                <img
+                  src="./Assets/modern_11zon.webp"
+                  alt="Modern Hospital Interior"
+                  class="main-img"
+                />
+                <div class="exp-card">
+                  <div class="exp-num">
+                    <span class="count" data-target="25">0</span>+
+                  </div>
+                  <div class="exp-text">Years of Clinical Excellence</div>
+                </div>
+              </div>
+              <div class="intro-shape"></div>
+            </div>
+
+            <div class="intro-content">
+              <div class="section-label">Why Choose Our Care</div>
+              <h2 class="intro-title">
+                A Multi-Specialty Ecosystem Built on
+                <span class="text-gradient">Precision & Empathy</span>
+              </h2>
+
+              <p class="intro-lead">
+                At our core, we are more than just a hospital; we are a
+                multi-disciplinary medical ecosystem. By merging
+                <strong>world-class expert doctors</strong> with
+                <strong>next-generation modern equipment</strong>, we bridge the
+                gap between advanced clinical science and personalized recovery.
+              </p>
+
+              <div class="pillars-list">
+                <div class="pillar-item">
+                  <div class="pillar-icon">
+                    <i class="fa-solid fa-microscope"></i>
+                  </div>
+                  <div class="pillar-info">
+                    <h4>Advanced Diagnostics</h4>
+                    <p>
+                      Harnessing AI-driven imaging for absolute diagnostic
+                      accuracy.
+                    </p>
+                  </div>
+                </div>
+                <div class="pillar-item">
+                  <div class="pillar-icon">
+                    <i class="fa-solid fa-user-check"></i>
+                  </div>
+                  <div class="pillar-info">
+                    <h4>Patient-First Logic</h4>
+                    <p>
+                      Treatment plans meticulously tailored to your unique
+                      genetic profile.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="intro-footer">
+                <a href="./error2.html">
+                  <button class="btn-primary-outline">
+                    Explore Our Specialties
+                  </button>
+                </a>
+                <div class="trust-signature">
+                  <img
+                    src="./Assets/sign_11zon.webp"
+                    alt="Director Signature"
+                    class="sig-img"
+                  />
+                  <span>Chief Medical Director</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-choose-us">
+        <div class="container">
+          <div class="section-header">
+            <span class="label">Clinical Excellence</span>
+            <h2 class="title">
+              Why Choose Our
+              <span class="text-gradient">Treatment Services</span>
+            </h2>
+            <p class="subtitle">
+              We combine high-level medical expertise with a patient-centric
+              philosophy to ensure the best possible health outcomes.
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="card-icon">
+                <i class="fa-solid fa-user-doctor"></i>
+              </div>
+              <h3>Board-Certified Specialists</h3>
+              <p>
+                Our team consists of world-renowned surgeons and physicians with
+                decades of clinical experience.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="card-icon">
+                <i class="fa-solid fa-microscope"></i>
+              </div>
+              <h3>Advanced Technology</h3>
+              <p>
+                Utilizing AI-driven diagnostics and minimally invasive
+                robotic-assisted surgical tools.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="card-icon"><i class="fa-solid fa-dna"></i></div>
+              <h3>Personalized Care Plans</h3>
+              <p>
+                Treatment regimens tailored specifically to your genetic profile
+                and medical history.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="card-icon">
+                <i class="fa-solid fa-truck-medical"></i>
+              </div>
+              <h3>24/7 Emergency Support</h3>
+              <p>
+                Rounding the clock trauma care and emergency response for
+                critical medical needs.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="card-icon">
+                <i class="fa-solid fa-shield-virus"></i>
+              </div>
+              <h3>Infection-Control Protocols</h3>
+              <p>
+                Strict sterilization standards and HEPA-filtered environments to
+                ensure zero-risk recovery.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="card-icon">
+                <i class="fa-solid fa-heart-pulse"></i>
+              </div>
+              <h3>Evidence-Based Outcomes</h3>
+              <p>
+                Every procedure is backed by the latest clinical research and
+                international health standards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="treatment-process">
+        <div class="container">
+          <div class="process-header">
+            <h2 class="title">
+              Your Journey to <span class="text-gradient">Total Recovery</span>
+            </h2>
+            <p>
+              A streamlined, four-step medical protocol designed for efficiency
+              and care.
+            </p>
+          </div>
+
+          <div class="process-wrapper">
+            <div class="process-line"></div>
+
+            <div class="process-step">
+              <div class="step-circle">01</div>
+              <div class="step-content">
+                <h4>Consultation</h4>
+                <p>
+                  Meet with our experts for a comprehensive physical and history
+                  review.
+                </p>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="step-circle">02</div>
+              <div class="step-content">
+                <h4>Diagnosis</h4>
+                <p>
+                  Advanced imaging and laboratory tests to pinpoint the root
+                  cause.
+                </p>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="step-circle">03</div>
+              <div class="step-content">
+                <h4>Treatment Plan</h4>
+                <p>
+                  Implementation of surgical or clinical therapies by
+                  specialized teams.
+                </p>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="step-circle">04</div>
+              <div class="step-content">
+                <h4>Recovery & Follow-up</h4>
+                <p>
+                  Post-care monitoring and rehabilitation for long-term
+                  wellness.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="medical-footer">
+        <div class="footer-grid">
+          <div class="footer-col about-col">
+            <div class="footer logo">
+              <img src="./Assets/logo-stackly.webp" alt="Medical Logo" />
+            </div>
+            <!-- <h3>MediCare<span>+</span></h3> -->
+            <p>
+              Providing trusted and professional healthcare services with modern
+              medical technology and experienced specialists.
+            </p>
+            <div class="social-links">
+              <a href="./error2.html"><i class="fa-brands fa-instagram"></i></a>
+              <a href="./error2.html"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="./error2.html"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="./error2.html"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="./health.html">Health Packages</a></li>
+              <li><a href="./treatments.html">Treatments</a></li>
+              <li><a href="./patient.html">Patient Resources</a></li>
+              <li><a href="./contact2.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <div class="contact-item">
+              <span class="icon">📍</span>
+              <p>Salem, India</p>
+            </div>
+            <div class="contact-item">
+              <span class="icon">📞</span>
+              <p>+91 1234567789</p>
+            </div>
+            <div class="contact-item">
+              <span class="icon">✉</span>
+              <p>support@stackly.com</p>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Subscribe Newsletter</h4>
+            <p>Get latest updates and medical news straight to your inbox.</p>
+            <form id="newsletterForm" class="subscribe-box">
+              <input type="email" placeholder="Enter your email" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 <strong>MediCare+</strong>. All Rights Reserved.</p>
+        </div>
+      </footer>
+
+      <div class="overlay" id="overlay"></div>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: "ease-out-cubic",
+      startEvent: "aos:ready", // manual trigger
+    });
+  </script>
+  <script src="./script.js"></script>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Hero -->
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+    tl.from(".breadcrumb-nav", { y: 30, opacity: 1, duration: 0.8 })
+      .from(".hero-title", { y: 10, opacity: 1, duration: 1 }, "-=0.5")
+      .from(".hero-tagline", { y: 30, opacity: 1, duration: 0.8 }, "-=0.6")
+      .from(".h-feat-item", { y: 20, opacity: 1, stagger: 0.15 }, "-=0.5")
+      .from(".stat-card", { y: 40, opacity: 1, stagger: 0.2 }, "-=0.5")
+      .from(
+        ".img-card",
+        { scale: 0.8, opacity: 1, stagger: 0.2, duration: 1 },
+        "-=1",
+      );
+
+    // Floating animation
+    gsap.to(".img-main", {
+      y: -20,
+      repeat: -1,
+      yoyo: true,
+      duration: 4,
+      ease: "sine.inOut",
+    });
+    gsap.to(".img-1", {
+      y: 15,
+      repeat: -1,
+      yoyo: true,
+      duration: 5,
+      ease: "sine.inOut",
+    });
+    gsap.to(".img-2", {
+      y: -10,
+      repeat: -1,
+      yoyo: true,
+      duration: 6,
+      ease: "sine.inOut",
+    });
+
+    // Counter animation
+    gsap.utils.toArray(".stat-num").forEach((counter) => {
+      let target = +counter.getAttribute("data-val");
+      gsap.fromTo(
+        counter,
+        { innerText: 0 },
+        {
+          innerText: target,
+          duration: 2,
+          snap: { innerText: 1 },
+          scrollTrigger: {
+            trigger: counter,
+            start: "top 80%",
+          },
+        },
+      );
+    });
+
+    // Mouse parallax
+    document
+      .querySelector(".hero-treatment")
+      .addEventListener("mousemove", (e) => {
+        const x = (window.innerWidth / 2 - e.pageX) / 50;
+        const y = (window.innerHeight / 2 - e.pageY) / 50;
+        gsap.to(".floating-orb", { x: x, y: y, duration: 0.6 });
+        gsap.to(".bg-glow", { x: x / 2, y: y / 2, duration: 0.6 });
+      });
+  </script>
+
+  <!-- 2 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      const introTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".intro-hospital",
+          start: "top 75%", // Starts when the section is 75% visible
+        },
+      });
+
+      introTl
+        // 1. Image Slide and Zoom out effect
+        .from(".main-image-wrapper", {
+          x: -100,
+          opacity: 0,
+          duration: 1.2,
+          ease: "power4.out",
+        })
+        .to(".main-img", { scale: 1, duration: 1.5 }, "-=1")
+
+        // 2. Experience Card Pop
+        .from(
+          ".exp-card",
+          {
+            scale: 0.5,
+            opacity: 0,
+            duration: 0.8,
+            ease: "back.out(1.7)",
+          },
+          "-=0.8",
+        )
+
+        // 3. Narrative content reveal
+        .from(
+          ".intro-content > *",
+          {
+            y: 30,
+            opacity: 0,
+            stagger: 0.15,
+            duration: 1,
+            ease: "power3.out",
+          },
+          "-=1",
+        )
+
+        // 4. Pillars slide from right
+        .from(
+          ".pillar-item",
+          {
+            x: 50,
+            opacity: 0,
+            stagger: 0.2,
+            duration: 0.8,
+          },
+          "-=0.5",
+        )
+
+        // 5. Counter Animation
+        .to(
+          ".count",
+          {
+            innerText: (i, target) => target.getAttribute("data-target"),
+            duration: 2,
+            snap: { innerText: 1 },
+            ease: "power1.inOut",
+          },
+          "-=1.5",
+        );
+    });
+  </script>
+  <!-- 3,4 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      // --- Why Choose Us Animations ---
+      gsap.from(".feature-card", {
+        scrollTrigger: {
+          trigger: ".why-choose-us",
+          start: "top 70%",
+        },
+        y: 0,
+        opacity: 1,
+        stagger: 0.15,
+        duration: 1,
+        ease: "power3.out",
+      });
+
+      // --- Treatment Process Animations ---
+      const processTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".treatment-process",
+          start: "top 70%",
+        },
+      });
+
+      processTl
+        .from(".process-header > *", {
+          y: 30,
+          opacity: 1,
+          stagger: 0.2,
+          duration: 0.8,
+        })
+        .from(
+          ".process-line",
+          {
+            scaleX: 0,
+            transformOrigin: "left center",
+            duration: 1,
+          },
+          "-=0.5",
+        )
+        .from(
+          ".process-step",
+          {
+            y: 40,
+            opacity: 1,
+            stagger: 0.2,
+            duration: 0.8,
+            ease: "back.out(1.7)",
+          },
+          "-=0.8",
+        );
+
+      // Add a glowing effect to the step circles on view
+      processTl.to(".step-circle", {
+        boxShadow: "0 0 0 8px #ffffff, 0 0 0 14px rgba(13, 110, 253, 0.2)",
+        stagger: 0.1,
+        duration: 0.5,
+        repeat: -1,
+        yoyo: true,
+      });
+    });
+  </script>
+
+    <script>
+  const newsletterForm = document.getElementById("newsletterForm");
+
+  if (newsletterForm) {
+    newsletterForm.addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent default reload
+
+      // If validation passes → redirect
+      if (newsletterForm.checkValidity()) {
+        window.location.href = "./error2.html";
+      }
+    });
+  }
+</script>
+</html>

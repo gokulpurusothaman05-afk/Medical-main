@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <title>Medical</title>
+    <link rel="icon" href="./Assets/logo-icon.webp" />
+    <link rel="stylesheet" href="./patient.css" />
+    <link rel="stylesheet" href="./layout.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Premium Medical Loader -->
+    <div class="medical-loader" id="medicalLoader">
+      <div class="loader-wrapper">
+        <div class="medical-cross">
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="ecg-line">
+          <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+            <path
+              d="M0 50 L70 50 L90 20 L110 80 L130 50 L200 50 L220 30 L240 70 L260 50 L500 50"
+            />
+          </svg>
+        </div>
+
+        <h3 class="loading-text">Preparing Your Care Experience...</h3>
+      </div>
+    </div>
+
+    <div class="the-main">
+      <header>
+        <div class="header1">
+          <div class="container1">
+            <h3>Welcome To Stackly Medical Health-Care Services.</h3>
+          </div>
+          <div class="container2">
+            <div>
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>(123)456-7890</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>Support@stackly.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="header2">
+          <div class="logo">
+            <a href="./index2.html">
+              <img src="./Assets/logo-stackly.webp" alt="Logo" />
+            </a>
+          </div>
+
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index2.html">Home </a>
+
+                <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index.html">Home 1</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./health.html">Health Packages</a></li>
+              <li><a href="./treatments.html">Treatments</a></li>
+              <li><a href="./patient.html">Patient Resources</a></li>
+              <li><a href="./contact2.html">Contact Us</a></li>
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <!-- <a class="btn" href="./error.html">Appointment</a> -->
+
+              <a href="./signin2.html">
+                <i class="fa-regular fa-circle-user"></i>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li
+            class="has-dropdown menu-item"
+            data-aos="fade-up-right"
+            data-aos-delay="100"
+          >
+            <div class="dropdown-header">
+              <a href="./index2.html">Home</a>
+              <span class="drop-caret" id="home-caret">▾</span>
+            </div>
+            <ul class="submenu" id="home-dropdown">
+              <li><a href="./index.html">Home 1</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="150">
+            <a href="./health.html">Health Packages</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="200">
+            <a href="./treatments.html">Treatments</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="250">
+            <a href="./patient.html">Patient Resources</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="300">
+            <a href="./contact2.html">Contact Us</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="400">
+            <a href="./signin2.html">Sign In</a>
+          </li>
+        </ul>
+
+        <div class="sidebar-login">
+          <!-- <a href="./error.html" data-aos="fade-up">
+            <button class="login-btn">Book an Appointment</button>
+          </a> -->
+        </div>
+      </div>
+
+      <main></main>
+
+      <section class="hero-resources">
+        <div class="resources-bg-container">
+          <div class="glow-orb orb-1"></div>
+          <div class="glow-orb orb-2"></div>
+          <div class="mesh-grid"></div>
+        </div>
+
+        <div class="container">
+          <div class="hero-res-split">
+            <div class="hero-res-content">
+              <nav class="res-breadcrumb">
+                <a href="./index2.html">Home</a>
+                <span class="res-separator"
+                  ><i class="fa-solid fa-chevron-right"></i
+                ></span>
+                <span class="res-current">Patient Resources</span>
+              </nav>
+
+              <h1 class="res-title">
+                <span class="res-line">Seamless Care,</span>
+                <span class="res-line text-gradient">Empowered Patients</span>
+              </h1>
+
+              <p class="res-subtitle">
+                Everything you need to know before, during, and after your
+                visit. Access clinical guidelines and digital forms in one hub.
+              </p>
+
+              <div class="res-search-wrapper">
+                <div class="search-inner">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input
+                    type="text"
+                    placeholder="Search resources..."
+                    required
+                  />
+                  <a href="./error2.html">
+                    <button class="btn-search">Search</button>
+                  </a>
+                </div>
+                <div class="quick-tags">
+                  <span>Popular:</span>
+                  <a href="./error2.html">Insurance</a>
+                  <a href="./error2.html">Forms</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-res-grid">
+              <div class="res-card-mini">
+                <div class="icon-box blue">
+                  <i class="fa-solid fa-file-invoice"></i>
+                </div>
+                <div class="card-info">
+                  <h4>Billing & Insurance</h4>
+                  <p>Pay bills and check coverage</p>
+                </div>
+              </div>
+              <div class="res-card-mini">
+                <div class="icon-box green">
+                  <i class="fa-solid fa-clipboard-list"></i>
+                </div>
+                <div class="card-info">
+                  <h4>Patient Forms</h4>
+                  <p>Pre-register online easily</p>
+                </div>
+              </div>
+              <div class="res-card-mini">
+                <div class="icon-box orange">
+                  <i class="fa-solid fa-flask"></i>
+                </div>
+                <div class="card-info">
+                  <h4>Lab Results</h4>
+                  <p>Access medical reports</p>
+                </div>
+              </div>
+              <div class="res-card-mini">
+                <div class="icon-box purple">
+                  <i class="fa-solid fa-calendar-check"></i>
+                </div>
+                <div class="card-info">
+                  <h4>Appointments</h4>
+                  <p>Schedule your next visit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="appointment-admission">
+        <div class="container">
+          <div class="info-grid">
+            <div class="info-card booking-card">
+              <div class="card-header">
+                <i class="fa-solid fa-calendar-check"></i>
+                <h3>Booking an Appointment</h3>
+              </div>
+              <ul class="info-list">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Online appointment
+                  booking available
+                </li>
+                <li>
+                  <i class="fa-solid fa-headset"></i> Call our dedicated support
+                  team
+                </li>
+                <li>
+                  <i class="fa-solid fa-person-walking"></i> Walk-in
+                  consultations (based on availability)
+                </li>
+              </ul>
+              <div class="card-action">
+                <a href="./error2.html">
+                  <button class="btn-primary">Book Online Now</button>
+                </a>
+              </div>
+            </div>
+
+            <div class="info-card admission-card">
+              <div class="card-header">
+                <i class="fa-solid fa-hospital-user"></i>
+                <h3>Admission Process</h3>
+              </div>
+              <div class="admission-steps">
+                <div class="a-step">
+                  <span class="step-num">01</span>
+                  <p>Doctor recommendation required for admission</p>
+                </div>
+                <div class="a-step">
+                  <span class="step-num">02</span>
+                  <p>Carry valid ID proof & insurance documents</p>
+                </div>
+                <div class="a-step">
+                  <span class="step-num">03</span>
+                  <p>Bring previous medical records & history</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="insurance-billing">
+        <div class="container">
+          <div class="billing-header">
+            <h2 class="title">
+              Insurance & <span class="text-gradient">Billing Support</span>
+            </h2>
+            <p>
+              We provide a seamless financial experience with transparent
+              pricing and global insurance partnerships.
+            </p>
+          </div>
+
+          <div class="billing-row">
+            <div class="billing-card insurance-feat">
+              <div class="billing-icon-wrap">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <h4>Insurance Support</h4>
+              <div class="pill-group">
+                <span class="badge-pill">Cashless Treatment</span>
+                <span class="badge-pill">Corporate Plans</span>
+              </div>
+              <p>
+                We accept all major insurance providers. Our desk helps you
+                navigate the claim process in real-time.
+              </p>
+            </div>
+
+            <div class="billing-card payment-feat">
+              <div class="billing-icon-wrap">
+                <i class="fa-solid fa-receipt"></i>
+              </div>
+              <h4>Billing & Payments</h4>
+              <p>
+                Experience a transparent billing system with no hidden costs.
+                Pay via digital wallets, cards, or EMI.
+              </p>
+              <div class="payment-logos">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-apple-pay"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="download-resources">
+        <div class="container">
+          <div class="vault-header">
+            <div class="header-content">
+              <span class="vault-label">Patient Portal</span>
+              <h2 class="vault-title">
+                Document <span class="text-gradient">Vault</span>
+              </h2>
+              <p>
+                Download and complete your paperwork before your visit to save
+                time. All forms are available in high-resolution PDF format.
+              </p>
+            </div>
+            <div class="vault-badge">
+              <i class="fa-solid fa-file-shield"></i>
+              <span>Secure PDF Access</span>
+            </div>
+          </div>
+
+          <div class="forms-grid">
+            <div class="form-card">
+              <div class="form-icon">
+                <i class="fa-solid fa-file-pdf"></i>
+              </div>
+              <div class="form-info">
+                <h4>Admission Form</h4>
+                <p>Primary registration document for inpatient services.</p>
+                <div class="form-meta">
+                  <span><i class="fa-solid fa-weight-hanging"></i> 1.2 MB</span>
+                  <span><i class="fa-solid fa-language"></i> EN/ES</span>
+                </div>
+              </div>
+              <a href="./admission.html" class="btn-download" download>
+                <i class="fa-solid fa-arrow-down-to-bracket"></i>
+              </a>
+            </div>
+
+            <div class="form-card">
+              <div class="form-icon">
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+              </div>
+              <div class="form-info">
+                <h4>Insurance Claim Form</h4>
+                <p>Standard form for cashless or reimbursement claims.</p>
+                <div class="form-meta">
+                  <span><i class="fa-solid fa-weight-hanging"></i> 850 KB</span>
+                  <span><i class="fa-solid fa-clock"></i> Updated 2024</span>
+                </div>
+              </div>
+              <a
+                href="./insurance-claim-form.html"
+                class="btn-download"
+                download
+              >
+                <i class="fa-solid fa-arrow-down-to-bracket"></i>
+              </a>
+            </div>
+
+            <div class="form-card">
+              <div class="form-icon">
+                <i class="fa-solid fa-signature"></i>
+              </div>
+              <div class="form-info">
+                <h4>Consent Form</h4>
+                <p>Legal authorization for surgical and medical procedures.</p>
+                <div class="form-meta">
+                  <span><i class="fa-solid fa-weight-hanging"></i> 420 KB</span>
+                  <span><i class="fa-solid fa-lock"></i> Confidential</span>
+                </div>
+              </div>
+              <a href="./consent-form.html" class="btn-download" download>
+                <i class="fa-solid fa-arrow-down-to-bracket"></i>
+              </a>
+            </div>
+
+            <div class="form-card">
+              <div class="form-icon">
+                <i class="fa-solid fa-notes-medical"></i>
+              </div>
+              <div class="form-info">
+                <h4>Medical History Form</h4>
+                <p>Comprehensive record of previous health data.</p>
+                <div class="form-meta">
+                  <span><i class="fa-solid fa-weight-hanging"></i> 1.5 MB</span>
+                  <span><i class="fa-solid fa-pen-nib"></i> Fillable PDF</span>
+                </div>
+              </div>
+              <a
+                href="./medical-history-form.html"
+                class="btn-download"
+                download
+              >
+                <i class="fa-solid fa-arrow-down-to-bracket"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="vault-footer">
+            <p>
+              <i class="fa-solid fa-circle-info"></i> Can't find the form you
+              need? Contact our
+              <a href="./error2.html">Medical Records Department</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="medical-footer">
+        <div class="footer-grid">
+          <div class="footer-col about-col">
+            <div class="footer logo">
+              <img src="./Assets/logo-stackly.webp" alt="Medical Logo" />
+            </div>
+            <!-- <h3>MediCare<span>+</span></h3> -->
+            <p>
+              Providing trusted and professional healthcare services with modern
+              medical technology and experienced specialists.
+            </p>
+            <div class="social-links">
+              <a href="./error2.html"><i class="fa-brands fa-instagram"></i></a>
+              <a href="./error2.html"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="./error2.html"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="./error2.html"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="./health.html">Health Packages</a></li>
+              <li><a href="./treatments.html">Treatments</a></li>
+              <li><a href="./patient.html">Patient Resources</a></li>
+              <li><a href="./contact2.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <div class="contact-item">
+              <span class="icon">📍</span>
+              <p>Salem, India</p>
+            </div>
+            <div class="contact-item">
+              <span class="icon">📞</span>
+              <p>+91 1234567789</p>
+            </div>
+            <div class="contact-item">
+              <span class="icon">✉</span>
+              <p>support@stackly.com</p>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Subscribe Newsletter</h4>
+            <p>Get latest updates and medical news straight to your inbox.</p>
+            <form id="newsletterForm" class="subscribe-box">
+              <input type="email" placeholder="Enter your email" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 <strong>MediCare+</strong>. All Rights Reserved.</p>
+        </div>
+      </footer>
+
+      <div class="overlay" id="overlay"></div>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: "ease-out-cubic",
+      startEvent: "aos:ready", // manual trigger
+    });
+  </script>
+  <script src="./script.js"></script>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- hero -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Register GSAP Plugins
+      gsap.registerPlugin(ScrollTrigger);
+
+      const tl = gsap.timeline({
+        defaults: { ease: "expo.out", duration: 1.4 },
+      });
+
+      // 1. Initial State Setups
+      gsap.set(".res-line", { y: 100, opacity: 1, rotateX: -45 });
+      gsap.set(".res-breadcrumb", { opacity: 1, y: -30 });
+      gsap.set(".res-subtitle", { opacity: 1, x: -30 });
+      gsap.set(".res-search-wrapper", { opacity: 1, y: 50 });
+      gsap.set(".res-card-mini", { opacity: 1, x: 100 });
+      gsap.set(".glow-orb", { scale: 1, opacity: 0 });
+
+      // 2. The Cinematic Entrance
+      tl.to(".glow-orb", {
+        opacity: 0.2,
+        scale: 1,
+        stagger: 0.4,
+        duration: 2.5,
+      })
+        .to(
+          ".res-breadcrumb",
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+          },
+          "-=1.8",
+        )
+        .to(
+          ".res-line",
+          {
+            y: 0,
+            opacity: 1,
+            rotateX: 0,
+            stagger: 0.2,
+          },
+          "-=1.5",
+        )
+        .to(
+          ".res-subtitle",
+          {
+            opacity: 1,
+            x: 0,
+            duration: 1,
+          },
+          "-=1.2",
+        )
+        .to(
+          ".res-search-wrapper",
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1.2,
+            ease: "back.out(1.7)",
+          },
+          "-=1",
+        )
+        .to(
+          ".res-card-mini",
+          {
+            opacity: 1,
+            x: 0,
+            stagger: 0.15,
+            duration: 1.2,
+            ease: "power4.out",
+          },
+          "-=1.2",
+        );
+
+      // 3. Magnetic Hover Effect for Search Bar
+      const searchBar = document.querySelector(".search-inner");
+      if (searchBar) {
+        searchBar.addEventListener("mousemove", (e) => {
+          const rect = searchBar.getBoundingClientRect();
+          const x = e.clientX - rect.left - rect.width / 2;
+          const y = e.clientY - rect.top - rect.height / 2;
+
+          gsap.to(searchBar, {
+            x: x * 0.1,
+            y: y * 0.1,
+            rotationY: x * 0.05,
+            rotationX: -y * 0.05,
+            duration: 0.4,
+            ease: "power2.out",
+          });
+        });
+
+        searchBar.addEventListener("mouseleave", () => {
+          gsap.to(searchBar, {
+            x: 0,
+            y: 0,
+            rotationY: 0,
+            rotationX: 0,
+            duration: 0.6,
+          });
+        });
+      }
+
+      // 4. Subtle Parallax for Orbs
+      window.addEventListener("mousemove", (e) => {
+        const mouseX = e.clientX / window.innerWidth;
+        const mouseY = e.clientY / window.innerHeight;
+
+        gsap.to(".orb-1", { x: mouseX * 50, y: mouseY * 50, duration: 1.5 });
+        gsap.to(".orb-2", { x: -mouseX * 30, y: -mouseY * 30, duration: 1.5 });
+      });
+    });
+  </script>
+  <!-- 2 , 3 -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Section 2: Appointment Cards slide from left/right
+      gsap.from(".booking-card", {
+        scrollTrigger: { trigger: ".appointment-admission", start: "top 80%" },
+        x: -50,
+        opacity: 1,
+        duration: 1,
+        ease: "power3.out",
+      });
+
+      gsap.from(".admission-card", {
+        scrollTrigger: { trigger: ".appointment-admission", start: "top 80%" },
+        x: 50,
+        opacity: 1,
+        duration: 1,
+        ease: "power3.out",
+      });
+
+      // Stagger steps inside admission
+      gsap.from(".a-step", {
+        scrollTrigger: { trigger: ".admission-card", start: "top 80%" },
+        y: 20,
+        opacity: 1,
+        stagger: 0.2,
+        delay: 0.5,
+      });
+
+      // Section 3: Insurance Cards Pop-up
+      gsap.from(".billing-card", {
+        scrollTrigger: { trigger: ".insurance-billing", start: "top 80%" },
+        scale: 0.9,
+        opacity: 1,
+        stagger: 0.3,
+        duration: 0.8,
+        ease: "back.out(1.7)",
+      });
+    });
+  </script>
+
+  <!-- 4 -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      const vaultTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".download-resources",
+          start: "top 80%",
+        },
+      });
+
+      // Header Animation
+      vaultTl
+        .from(".header-content > *", {
+          x: -30,
+          opacity: 1,
+          stagger: 0.15,
+          duration: 0.8,
+        })
+        .from(
+          ".vault-badge",
+          {
+            scale: 0.8,
+            opacity: 1,
+            duration: 0.6,
+            ease: "back.out(1.7)",
+          },
+          "-=0.4",
+        )
+
+        // Cards Animation
+        .from(
+          ".form-card",
+          {
+            y: 40,
+            opacity: 1,
+            stagger: 0.1,
+            duration: 0.8,
+            ease: "power2.out",
+          },
+          "-=0.2",
+        );
+
+      // Simple interaction: Download button pulse
+      gsap.to(".btn-download", {
+        scale: 1.1,
+        duration: 0.8,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+        stagger: 0.2,
+      });
+    });
+  </script>
+
+    <script>
+  const newsletterForm = document.getElementById("newsletterForm");
+
+  if (newsletterForm) {
+    newsletterForm.addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent default reload
+
+      // If validation passes → redirect
+      if (newsletterForm.checkValidity()) {
+        window.location.href = "./error2.html";
+      }
+    });
+  }
+</script>
+</html>
