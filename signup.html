@@ -65,7 +65,7 @@
         </nav>
         <div class="icons">
           <div class="login">
-            <a class="btn" href="./app.html">Appointment</a>
+           
             <a href="./signin.html" aria-label="Sign In">
               <i class="fa-regular fa-circle-user"></i>
             </a>
@@ -167,7 +167,6 @@
       </div>
     </section>
 
-    <script src="./auth.js"></script>
     <script>
       const toggleSignupPassword = document.getElementById("toggleSignupPassword");
       const signupPassword = document.getElementById("signupPassword");
@@ -179,16 +178,26 @@
         toggleSignupPassword.textContent = type === "password" ? "Show" : "Hide";
       });
 
+      function validateMedicalCredentials(email, pass) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!re.test(email)) {
+          alert("Please enter a valid email address.");
+          return false;
+        }
+        if (pass.length < 6) {
+          alert("Password must be at least 6 characters.");
+          return false;
+        }
+        return true;
+      }
+
       signupForm.addEventListener("submit", (e) => {
         e.preventDefault();
-
         const email = document.getElementById("signupEmail").value.trim();
         const pass = signupPassword.value.trim();
-
         if (!validateMedicalCredentials(email, pass)) return;
-
-        StacklyAuth.signIn(email);
-        window.location.href = "./dashboard.html";
+        // valid → redirect to existing error page (no account stored)
+        window.location.href = "./error2.html";
       });
     </script>
     <script src="./script.js"></script>

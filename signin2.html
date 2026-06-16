@@ -59,12 +59,12 @@
             <li><a href="./health.html">Health Packages</a></li>
             <li><a href="./treatments.html">Treatments</a></li>
             <li><a href="./patient.html">Patient Resources</a></li>
-            <li><a href="./contact2.html">Contact Us</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
           </ul>
         </nav>
         <div class="icons">
           <div class="login">
-            <a href="./signin2.html" aria-label="Sign In">
+            <a href="./signin.html" aria-label="Sign In">
               <i class="fa-regular fa-circle-user"></i>
             </a>
           </div>
@@ -87,8 +87,8 @@
         <li class="menu-item"><a href="./health.html">Health Packages</a></li>
         <li class="menu-item"><a href="./treatments.html">Treatments</a></li>
         <li class="menu-item"><a href="./patient.html">Patient Resources</a></li>
-        <li class="menu-item"><a href="./contact2.html">Contact Us</a></li>
-        <li class="menu-item"><a href="./signin2.html">Sign In</a></li>
+        <li class="menu-item"><a href="./contact.html">Contact Us</a></li>
+        <li class="menu-item"><a href="./signin.html">Sign In</a></li>
       </ul>
     </div>
 
@@ -161,7 +161,6 @@
     </section>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./auth.js"></script>
     <script>
       AOS.init({ once: true, duration: 1000, easing: "ease-out-cubic" });
 
@@ -175,13 +174,26 @@
         togglePassword.textContent = type === "password" ? "Show" : "Hide";
       });
 
+      function validateMedicalCredentials(email, pass) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!re.test(email)) {
+          alert("Please enter a valid email address.");
+          return false;
+        }
+        if (pass.length < 6) {
+          alert("Password must be at least 6 characters.");
+          return false;
+        }
+        return true;
+      }
+
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         const email = document.getElementById("email").value.trim();
         const pass = password.value.trim();
         if (!validateMedicalCredentials(email, pass)) return;
-        StacklyAuth.signIn(email);
-        window.location.href = "./patient.html";
+        // valid → redirect to 404 (no auth/storage performed)
+        window.location.href = "./404.html";
       });
     </script>
     <script src="./script.js"></script>

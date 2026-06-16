@@ -67,7 +67,7 @@
 
         <div class="icons">
           <div class="login">
-            <a class="btn" href="./app.html">Appointment</a>
+            
             <a href="./signin.html" aria-label="Sign In">
               <i class="fa-regular fa-circle-user"></i>
             </a>
@@ -203,7 +203,6 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="./auth.js"></script>
     <script>
       AOS.init({
         once: true,
@@ -222,16 +221,26 @@
         togglePassword.textContent = type === "password" ? "Show" : "Hide";
       });
 
+      function validateMedicalCredentials(email, pass) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!re.test(email)) {
+          alert("Please enter a valid email address.");
+          return false;
+        }
+        if (pass.length < 6) {
+          alert("Password must be at least 6 characters.");
+          return false;
+        }
+        return true;
+      }
+
       form.addEventListener("submit", (e) => {
         e.preventDefault();
-
         const email = document.getElementById("email").value.trim();
         const pass = password.value.trim();
-
         if (!validateMedicalCredentials(email, pass)) return;
-
-        StacklyAuth.signIn(email);
-        window.location.href = "./dashboard.html";
+        // valid → redirect to existing error page (no auth/storage performed)
+        window.location.href = "./error2.html";
       });
     </script>
     <script src="./script.js"></script>
