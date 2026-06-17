@@ -143,3 +143,39 @@ if (dropdown && dropToggle) {
     /* ignore invalid session data */
   }
 })();
+
+(function handleSignupRedirects() {
+  try {
+    const isTrack2 = /index2|health|treatments|patient|contact2|signin2|signup2|signout2/.test(
+      window.location.pathname,
+    );
+
+    document.addEventListener("click", (e) => {
+      const a = e.target.closest ? e.target.closest("a") : null;
+      if (!a) return;
+
+      const href = a.getAttribute("href") || "";
+      const text = (a.textContent || "").toLowerCase();
+
+      // Identify signup links by class, href or visible text
+      const isSignupLink =
+        a.classList.contains("signup-link") ||
+        /signup(?:2)?\.html$/.test(href) ||
+        text.includes("create an account") ||
+        text.includes("sign up");
+
+      if (!isSignupLink) return;
+
+      e.preventDefault();
+      // If coming from the index2 track, redirect to signin2 per requirement,
+      // otherwise go to the regular signup page.
+      if (isTrack2) {
+        window.location.href = "./signin2.html";
+      } else {
+        window.location.href = "./signup.html";
+      }
+    });
+  } catch (err) {
+    /* ignore errors */
+  }
+})();
