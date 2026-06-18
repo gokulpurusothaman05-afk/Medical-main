@@ -1,13 +1,21 @@
 /* Shared layout spacing — header clearance, banner gap, section rhythm */
 :root {
-  --header-height: calc(10vh + 58px);
+  /* dynamic viewport height fallback (will be updated by JS to avoid mobile address-bar jumps) */
+  --vh: 1vh;
+  --header-height: calc(var(--vh) * 10 + 58px);
   --banner-gap: 36px;
   --section-gap: 70px;
 }
 
+/* Normalize body width to avoid 100vw scrollbar/shift issues on mobile */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 @media screen and (max-width: 1180px) {
   :root {
-    --header-height: 10vh;
+    --header-height: calc(var(--vh) * 10);
   }
 }
 
@@ -30,7 +38,7 @@ main {
 
 .Structure {
   margin-top: var(--header-height);
-  min-height: calc(100vh - var(--header-height));
+  min-height: calc(var(--vh, 1vh) * 100 - var(--header-height));
   height: auto !important;
 }
 
@@ -42,4 +50,43 @@ section {
 /* Auth forms outside main still need header clearance */
 body > .Structure {
   margin-top: var(--header-height);
+}
+
+/* Use dynamic viewport height for elements that previously used 100vh */
+body.no-scroll {
+  height: calc(var(--vh, 1vh) * 100) !important;
+}
+.sidebar {
+  height: calc(var(--vh, 1vh) * 100) !important;
+}
+
+/* Force footer left alignment on small screens across all pages */
+@media (max-width: 768px) {
+  .medical-footer .footer-grid,
+  .medical-footer .footer-bottom,
+  .medical-footer .footer-col,
+  .medical-footer .contact-item,
+  .medical-footer .social-links {
+    text-align: left !important;
+    justify-items: start !important;
+    align-items: start !important;
+  }
+
+  /* Ensure footer columns stack but align left */
+  .medical-footer .footer-grid {
+    grid-template-columns: 1fr !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    gap: 20px !important;
+  }
+
+  /* Place heading underline at left when stacked */
+  .medical-footer .footer-col h4::after {
+    left: 0 !important;
+    transform: none !important;
+  }
+
+  .medical-footer .contact-item {
+    justify-content: flex-start !important;
+  }
 }

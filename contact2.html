@@ -151,63 +151,7 @@
       <main></main>
 
       <section class="Home2-Contact-Wrapper">
-        <div class="dept-connector">
-          <div class="container">
-            <div class="v2-main-head">
-              <span class="v2-top-tag">Direct Lines</span>
-              <h2 class="v2-title">
-                Connect with <span class="v2-gradient">Specialists</span>
-              </h2>
-            </div>
-            <div class="v2-grid-row">
-              <div class="v2-dept-box" data-dept="cardiology">
-                <div class="v2-icon-circle">
-                  <i class="fa-solid fa-heart-pulse"></i>
-                </div>
-                <h3>Cardiology Unit</h3>
-                <p>Immediate inquiry for cardiac care and rhythm monitoring.</p>
-                <div class="v2-status-line">
-                  <span class="v2-timer"
-                    ><i class="fa-solid fa-clock"></i> 4 min wait</span
-                  >
-                  <a href="tel:+123456789" class="v2-call-icon"
-                    ><i class="fa-solid fa-phone"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="v2-dept-box" data-dept="neurology">
-                <div class="v2-icon-circle">
-                  <i class="fa-solid fa-brain"></i>
-                </div>
-                <h3>Neurology Center</h3>
-                <p>Consultations for neuro-diagnostics and brain health.</p>
-                <div class="v2-status-line">
-                  <span class="v2-timer"
-                    ><i class="fa-solid fa-clock"></i> 12 min wait</span
-                  >
-                  <a href="tel:+123456789" class="v2-call-icon"
-                    ><i class="fa-solid fa-phone"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="v2-dept-box active-now" data-dept="pediatrics">
-                <div class="v2-icon-circle">
-                  <i class="fa-solid fa-baby"></i>
-                </div>
-                <h3>Pediatric Care</h3>
-                <p>
-                  Dedicated emergency and routine care for infants and children.
-                </p>
-                <div class="v2-status-line">
-                  <span class="v2-timer green">Available Now</span>
-                  <a href="tel:+123456789" class="v2-call-icon"
-                    ><i class="fa-solid fa-phone"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
 
         <div class="v2-intake-section">
           <div class="container v2-flex-container">
@@ -472,6 +416,12 @@
         const btnText = btn.querySelector("span");
         const btnIcon = btn.querySelector("i");
 
+        // Basic HTML5 validation
+        if (!intakeForm.checkValidity()) {
+          intakeForm.reportValidity();
+          return;
+        }
+
         // 🔄 Processing State
         btn.disabled = true;
         btnText.textContent = "Processing...";
@@ -482,7 +432,7 @@
           gsap.to(btn, { scale: 0.95, duration: 0.2 });
         }
 
-        // Simulate delay
+        // Simulate delay then redirect to 404 page on success
         setTimeout(() => {
           // ✅ Done State
           btnText.textContent = "Processing Complete";
@@ -497,11 +447,11 @@
             });
           }
 
-          // Optional redirect after success
-          // setTimeout(() => {
-          //   window.location.href = "./error.html";
-          // }, 1000);
-        }, 2000);
+          // Redirect to the 404 page after a short confirmation delay
+          setTimeout(() => {
+            window.location.href = "./error.html";
+          }, 800);
+        }, 1400);
       });
     }
   </script>

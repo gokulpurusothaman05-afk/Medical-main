@@ -144,6 +144,20 @@ if (dropdown && dropToggle) {
   }
 })();
 
+// --- Fix mobile 100vh viewport jumps by exposing a dynamic --vh CSS variable ---
+function setVhCssVar() {
+  try {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  } catch (e) {
+    /* ignore */
+  }
+}
+
+setVhCssVar();
+window.addEventListener('resize', setVhCssVar);
+window.addEventListener('orientationchange', setVhCssVar);
+
 (function handleSignupRedirects() {
   try {
     const isTrack2 = /index2|health|treatments|patient|contact2|signin2|signup2|signout2/.test(
