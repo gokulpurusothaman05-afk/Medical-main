@@ -18,24 +18,114 @@
     />
   </head>
   <body>
-    <header>
-      <div class="header2">
-        <div class="logo">
-          <a href="./index2.html">
-            <img src="./Assets/logo-stackly.webp" alt="Logo" />
-          </a>
-        </div>
-        <div class="icons">
-          <div class="login">
-            <a href="./signin2.html" aria-label="Sign In">
-              <i class="fa-regular fa-circle-user"></i>
-            </a>
+   <header>
+        <div class="header1">
+          <div class="container1">
+            <h3>Welcome To Stackly Medical Health-Care Services.</h3>
+          </div>
+          <div class="container2">
+            <div>
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>(123)456-7890</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>Support@stackly.com</p>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+        <div class="header2">
+          <div class="logo">
+            <a href="./index2.html">
+              <img src="./Assets/logo-stackly.webp" alt="Logo" />
+            </a>
+          </div>
 
-    <section class="Structure">
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index2.html">Home </a>
+
+                <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index.html">Home 1</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./health.html">Health Packages</a></li>
+              <li><a href="./treatments.html">Treatments</a></li>
+              <li><a href="./patient.html">Patient Resources</a></li>
+              <li><a href="./contact2.html">Contact Us</a></li>
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <!-- <a class="btn" href="./error.html">Appointment</a> -->
+
+              <a href="./signin2.html">
+                <i class="fa-regular fa-circle-user"></i>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li
+            class="has-dropdown menu-item"
+            data-aos="fade-up-right"
+            data-aos-delay="100"
+          >
+            <div class="dropdown-header">
+              <a href="./index2.html">Home</a>
+              <span class="drop-caret" id="home-caret">▾</span>
+            </div>
+            <ul class="submenu" id="home-dropdown">
+              <li><a href="./index.html">Home 1</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="150">
+            <a href="./health.html">Health Packages</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="200">
+            <a href="./treatments.html">Treatments</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="250">
+            <a href="./patient.html">Patient Resources</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="300">
+            <a href="./contact2.html">Contact Us</a>
+          </li>
+          <li class="menu-item" data-aos="fade-up-right" data-aos-delay="400">
+            <a href="./signin2.html">Sign In</a>
+          </li>
+        </ul>
+
+        <div class="sidebar-login">
+          <!-- <a href="./error.html" data-aos="fade-up">
+            <button class="login-btn">Book an Appointment</button>
+          </a> -->
+        </div>
+      </div>
+<main></main>
+  <div class="overlay" id="overlay"></div>
+  <section class="Structure">
       <div class="login-wrapper">
         <div class="login-card">
           <div class="login-left">

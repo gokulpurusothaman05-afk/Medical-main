@@ -184,7 +184,7 @@ window.addEventListener('orientationchange', setVhCssVar);
       // If coming from the index2 track, redirect to signin2 per requirement,
       // otherwise go to the regular signup page.
       if (isTrack2) {
-        window.location.href = "./signin2.html";
+        window.location.href = "./signup2.html";
       } else {
         window.location.href = "./signup.html";
       }
