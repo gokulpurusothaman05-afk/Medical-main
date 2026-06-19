@@ -152,6 +152,9 @@
               <a href="./error2.html" class="forgot">Forgot password?</a>
               <button type="submit" class="login-btn1">Sign In</button>
            
+              <div class="signup">
+                <p>New here? <a href="./signup.html">Create an account</a></p>
+              </div>
             </form>
           </div>
         </div>
@@ -191,7 +194,7 @@
         const pass = password.value.trim();
         if (!validateMedicalCredentials(email, pass)) return;
         // valid → redirect to 404 (no auth/storage performed)
-        window.location.href = "./404.html";
+        window.location.href = "./error2.html";
       });
     </script>
     <script src="./script.js"></script>

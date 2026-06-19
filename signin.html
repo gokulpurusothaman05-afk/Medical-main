@@ -12,6 +12,13 @@
     <link rel="icon" href="./Assets/logo-icon.webp" />
     <link rel="stylesheet" href="./login.css" />
     <link rel="stylesheet" href="./layout.css" />
+    <style>
+      /* Page-specific override: remove extra top gap on small screens */
+      @media screen and (max-width: 480px) {
+        main { margin-top: 0 !important; }
+        .subheader { margin-top: 0; padding-top: 0; }
+      }
+    </style>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"

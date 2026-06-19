@@ -788,7 +788,7 @@ main {
 .hero {
   width: 100%;
   height: 90vh;
-  background-image: url("./Assets/hero-bg"); /* add extension */
+  background-image: url("./Assets/servicehero_11zon.webp");
   background-size: cover; /* 🔥 This makes image cover */
   background-position: center;
   background-repeat: no-repeat;

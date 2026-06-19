@@ -90,3 +90,13 @@ body.no-scroll {
     justify-content: flex-start !important;
   }
 }
+
+/* Hide appointment button inside hamburger (mobile sidebar) */
+@media screen and (max-width: 900px) {
+  .sidebar .sidebar-login {
+    display: none !important;
+  }
+  .sidebar a[href="./app.html"] {
+    display: none !important;
+  }
+}
